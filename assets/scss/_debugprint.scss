@@ -1,0 +1,48 @@
+.debugprint_wrap {
+  padding: 20px;
+  display: inline-block;
+  margin: 10px auto;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+}
+
+.debugprint {
+  td, th {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  th {
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  tr {
+    padding: 5px 10px;
+  }
+  .key {
+    font-weight: bold;
+  }
+  .type {
+    font-size: 0.9em;
+    font-family: monospace;
+    font-style: italic;
+  }
+  .value {
+    font-family: monospace;
+  }
+  .true {
+    color: green;
+  }
+  .false {
+    color: red;
+  }
+  th.key,
+  th.type,
+  th.value {
+    font-family: helvetica, arial, san-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1em;
+    font-style: normal;
+  }
+}
