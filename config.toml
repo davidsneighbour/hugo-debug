@@ -7,8 +7,8 @@ source = "assets"
 target = "assets"
 
 [[module.mounts]]
-source = "data"
-target = "data"
+source = "data/dnb/debugprint"
+target = "data/dnb/debugprint"
 
 [[module.mounts]]
 source = "layouts"
