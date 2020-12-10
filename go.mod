@@ -1,3 +1,3 @@
-module github.com/kaushalmodi/hugo-debugprint
+module github.com/dnb-hugo/debugprint
 
 go 1.15
