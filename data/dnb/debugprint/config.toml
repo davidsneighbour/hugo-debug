@@ -1,3 +1,10 @@
+# plugins
 css = [
     "scss/debugprint"
 ]
+
+[production]
+# set this to false to enable debugging in a production environment. This
+# "production" environment is detected by checking the `.Site.IsServer`
+# variable.
+disable = true
