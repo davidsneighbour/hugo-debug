@@ -1,0 +1,15 @@
+[module.hugoVersion]
+extended = false
+min = "0.56.0"
+
+[[module.mounts]]
+source = "assets"
+target = "assets"
+
+[[module.mounts]]
+source = "data"
+target = "data"
+
+[[module.mounts]]
+source = "layouts"
+target = "layouts"
