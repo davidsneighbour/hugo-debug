@@ -7,9 +7,6 @@ table.debugprint {
   @extend .table-sm;
   @extend .table-hover;
 
-  .key {}
-  .type {}
-  .value {}
   .true {
     color: map-get($theme-colors, 'success');
   }
