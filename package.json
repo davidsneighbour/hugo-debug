@@ -1,0 +1,77 @@
+{
+  "name": "@dnb-hugo/debugprint",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dnb-hugo/debugprint.git"
+  },
+  "author": "",
+  "license": "GPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/dnb-hugo/debugprint/issues"
+  },
+  "homepage": "https://github.com/dnb-hugo/debugprint#readme",
+  "private": true,
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
+  },
+  "scripts": {
+    "release": "standard-version --release-as patch -a -t \"v\" && ./bin/release-hook-postrelease.sh",
+    "release-next": "standard-version --release-as minor -a -t \"v\" && ./bin/release-hook-postrelease.sh",
+    "release-major": "standard-version --release-as major -a -t \"v\" && ./bin/release-hook-postrelease.sh"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "11.0.0",
+    "@commitlint/config-conventional": "11.0.0",
+    "commitizen": "4.2.2",
+    "cz-conventional-changelog": "3.3.0",
+    "cz-customizable": "6.3.0",
+    "cz-customizable-ghooks": "2.0.0",
+    "remark-preset-lint-dnb": "github:dnb-hugo/remark-preset-lint-dnb",
+    "standard-version": "9.0.0"
+  },
+  "standard-version": {
+    "skip": {
+      "changelog": true
+    },
+    "bumpFiles": [
+      {
+        "filename": "package.json",
+        "type": "json"
+      }
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
+    "rules": {
+      "body-max-line-length": [
+        0,
+        "always",
+        100
+      ],
+      "type-enum": [
+        0,
+        "always",
+        [
+          "feat",
+          "fix",
+          "layouts",
+          "refactor",
+          "test",
+          "chore",
+          "wip",
+          "content"
+        ]
+      ]
+    }
+  }
+}
