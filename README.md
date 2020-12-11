@@ -1,3 +1,5 @@
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/6f080031f82149f0a2f8e7ebdccfcc9f)](https://www.codacy.com/gh/dnb-hugo/debugprint/dashboard)
+
 ## Notes
 
 - This is not a standalone theme. This is a Hugo module to use while you are developing your theme or website.
