@@ -1,5 +1,5 @@
+/* stylelint-disable at-rule-no-unknown */
 table.debugprint {
-
   @extend .table;
   @extend .table-light;
   @extend .table-striped;
@@ -10,8 +10,8 @@ table.debugprint {
   .true {
     color: map-get($theme-colors, 'success');
   }
+
   .false {
     color: map-get($theme-colors, 'danger');
   }
-
 }
