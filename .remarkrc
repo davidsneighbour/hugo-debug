@@ -1,0 +1,9 @@
+{
+  "plugins": [
+    "remark-preset-lint-dnb",
+    [
+      "remark-lint-write-good",
+      false
+    ]
+  ]
+}
