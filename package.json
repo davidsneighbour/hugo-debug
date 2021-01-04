@@ -5,7 +5,15 @@
     "type": "git",
     "url": "git+https://github.com/dnb-hugo/debugprint.git"
   },
-  "author": "",
+  "author": {
+    "name": "Kaushal Modi",
+    "web": "https://github.com/kaushalmodi"
+  },
+  "maintainer": {
+    "name": "Patrick Kollitsch",
+    "email": "patrick@davids-neighbour.com",
+    "web": "https://davids-neighbour.com"
+  },
   "license": "GPL-3.0-only",
   "bugs": {
     "url": "https://github.com/dnb-hugo/debugprint/issues"
@@ -18,30 +26,32 @@
     }
   },
   "scripts": {
-    "release": "standard-version --release-as patch -a -t \"v\" && ./bin/release-hook-postrelease.sh",
-    "release-next": "standard-version --release-as minor -a -t \"v\" && ./bin/release-hook-postrelease.sh",
-    "release-major": "standard-version --release-as major -a -t \"v\" && ./bin/release-hook-postrelease.sh"
+    "release": "standard-version --release-as patch -a -t \"v\" && git push --follow-tags origin main",
+    "release-next": "standard-version --release-as minor -a -t \"v\" && git push --follow-tags origin main",
+    "release-major": "standard-version --release-as major -a -t \"v\" && git push --follow-tags origin main",
+    "clean": "run-p clean:**",
+    "clean:npm": "rm -rf node_modules",
+    "commitlint": "commitlint --from=HEAD~1",
+    "lint": "run-p lint:**",
+    "lint:scss": "stylelint assets/scss"
   },
   "devDependencies": {
     "@commitlint/cli": "11.0.0",
     "@commitlint/config-conventional": "11.0.0",
+    "@dnb-hugo/browserslist-config-dnb": "github:dnb-hugo/browserslist-config-dnb",
+    "@dnb-hugo/commitlint-config-dnb": "github:dnb-hugo/commitlint-config-dnb",
+    "@dnb-hugo/remark-preset-lint-dnb": "github:dnb-hugo/remark-preset-lint-dnb",
+    "@dnb-hugo/standard-version-config-dnb": "github:dnb-hugo/standard-version-config-dnb",
+    "@dnb-hugo/stylelint-config-dnb": "github:dnb-hugo/stylelint-config-dnb",
+    "@dnb-hugo/textlint-config-dnb": "github:dnb-hugo/textlint-config-dnb",
     "commitizen": "4.2.2",
     "cz-conventional-changelog": "3.3.0",
     "cz-customizable": "6.3.0",
     "cz-customizable-ghooks": "2.0.0",
-    "remark-preset-lint-dnb": "github:dnb-hugo/remark-preset-lint-dnb",
-    "standard-version": "9.0.0"
-  },
-  "standard-version": {
-    "skip": {
-      "changelog": true
-    },
-    "bumpFiles": [
-      {
-        "filename": "package.json",
-        "type": "json"
-      }
-    ]
+    "husky": "4.3.6",
+    "npm-run-all": "4.1.5",
+    "standard-version": "9.0.0",
+    "stylelint": "13.8.0"
   },
   "husky": {
     "hooks": {
@@ -50,28 +60,7 @@
   },
   "commitlint": {
     "extends": [
-      "@commitlint/config-conventional"
-    ],
-    "rules": {
-      "body-max-line-length": [
-        0,
-        "always",
-        100
-      ],
-      "type-enum": [
-        0,
-        "always",
-        [
-          "feat",
-          "fix",
-          "layouts",
-          "refactor",
-          "test",
-          "chore",
-          "wip",
-          "content"
-        ]
-      ]
-    }
+      "@dnb-hugo/commitlint-config-dnb"
+    ]
   }
 }

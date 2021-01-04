@@ -20,22 +20,32 @@ disabled = false
 
 ## Usage
 
+### In layout files
+
 To print a variable in one of your layouts:
 
 ```gotemplate
 {{ partial "debugprint" . }}
+{{ partial "debugprint" .Params }}
+{{ partial "debugprint" site }}
+{{ partial "debugprint" site.Menus }}
+{{ partial "debugprint" .GitInfo }}
+{{ partial "debugprint" .Resources }}
+{{ partial "debugprint" .File }}
 ```
 
 Exchange the `.` (dot) with whatever variable you want to debug. Sub-collections or sub-slices might require extra setup to be debugged, depending on the structure and type of the values.
 
+### In content files
+
 To debug page data from within a Markdown file:
 
 ```markdown
-{{< debug >}} <-- the same as
-{{< debug "page" >}} <-- debug page variable
-{{< debug "params" >}} <-- debug page params
-{{< debug "site" >}} <-- debug site params
-{{< debug param="bla" >}} <-- debug .Params.bla
+{{< debug >}} <!-- the same as -->
+{{< debug "page" >}} <!-- debug page variable -->
+{{< debug "params" >}} <!-- debug page params -->
+{{< debug "site" >}} <!-- debug site params -->
+{{< debug param="bla" >}} <!-- debug .Params.bla -->
 ```
 
 Debugging from within Markdown requires very explicit configuration in the shortcode template. [Open a new issue](https://github.com/dnb-hugo/debugprint/issues/new) if you require a specific debugging object.

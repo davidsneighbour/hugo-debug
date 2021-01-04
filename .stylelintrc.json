@@ -1,0 +1,3 @@
+{
+  "extends": "@dnb-hugo/stylelint-config-dnb"
+}
