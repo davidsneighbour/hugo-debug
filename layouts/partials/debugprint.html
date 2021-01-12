@@ -23,10 +23,10 @@
 {{ $typeIsInterface            := (or $typeIsResource) }}
 {{ $typeIsSpecial              := (or $typeIsWeightedPage) }}
 
-{{ if $typeIsBool }}
-    {{ printf `<span class="debugprint"><span class="%#v">%#v</span></span>` $value $value | safeHTML }}
-{{ else if $typeIsPosition }}
-    <div class="debugprint_wrap">
+<div class="debugprint_wrap">
+    {{ if $typeIsBool }}
+        {{ printf `<span class="debugprint"><span class="%#v">%#v</span></span>` $value $value | safeHTML }}
+    {{ else if $typeIsPosition }}
         <table class="debugprint">
             <tr><th class="key">Key</th><th class="type">Type</th><th class="value">Value</th></tr>
             <tr><th>Filename</th><td>string</td><td>{{ $value.Filename }}</td></tr>
@@ -34,20 +34,18 @@
             <tr><th>LineNumber</th><td>int</td><td>{{ $value.LineNumber }}</td></tr>
             <tr><th>ColumnNumber</th><td>int</td><td>{{ $value.ColumnNumber }}</td></tr>
         </table>
-    </div>
-{{ else if (or $typeIsNumber $typeIsString) }}
-    <!-- Use %#v for strings so that their values always get double-quoted.
-         That is helpful to tell if a space char is within a string. -->
-    {{ printf "%#v" $value | htmlUnescape }}
-{{ else if $typeIsTime }}
-    {{ printf "%s" $value | safeHTML }}
-{{ else if $typeIsSlice }}
-    {{ range $value }}
-        {{ partial "debugprint.html" . }} <!-- Recursive call FTW! -->
-    {{ end }}
-{{ else if $typeIsMap }}
-    {{ if (gt (len $value) 0) }}
-        <div class="debugprint_wrap">
+    {{ else if (or $typeIsNumber $typeIsString) }}
+        <!-- Use %#v for strings so that their values always get double-quoted.
+             That is helpful to tell if a space char is within a string. -->
+        {{ printf "%#v" $value | htmlUnescape }}
+    {{ else if $typeIsTime }}
+        {{ printf "%s" $value | safeHTML }}
+    {{ else if $typeIsSlice }}
+        {{ range $value }}
+            {{ partial "debugprint.html" . }} <!-- Recursive call FTW! -->
+        {{ end }}
+    {{ else if $typeIsMap }}
+        {{ if (gt (len $value) 0) }}
             <table class="debugprint">
                 <tr><th class="key">Key</th><th class="type">Type</th><th class="value">Value</th></tr>
                 {{ range $key1, $value1 := $value }}
@@ -67,10 +65,8 @@
                     {{ end }}
                 {{ end }}
             </table>
-        </div>
-    {{ end }}
-{{ else if $typeIsStruct }}
-    <div class="debugprint_wrap">
+        {{ end }}
+    {{ else if $typeIsStruct }}
         {{ if $typeIsSiteInfo }} <!-- https://github.com/gohugoio/hugo/blob/master/hugolib/site.go -->
             {{ $siteVarNames   := (slice "Title" "Author" "Social" "LastChange" "DisqusShortname" "GoogleAnalytics" "Copyright" "RSSLink" "LanguageCode" "BuildDrafts" "Params") }}
             {{ $siteVarSymbols := (slice .Title  .Author  .Social  .LastChange  .DisqusShortname  .GoogleAnalytics  .Copyright  .RSSLink  .LanguageCode  .BuildDrafts  .Params ) }}
@@ -171,9 +167,7 @@
                 {{ end }}
             </table>
         {{ end }}
-    </div>
-{{ else if $typeIsInterface }}
-    <div class="debugprint_wrap">
+    {{ else if $typeIsInterface }}
         {{ if $typeIsResource }} <!-- https://github.com/gohugoio/hugo/blob/master/resource/resource.go -->
             {{ $ResourceVarNames   := (slice "Name" "Title" "ResourceType" "Permalink" "RelPermalink" "Params") }}
             {{ $ResourceVarSymbols := (slice .Name  .Title  .ResourceType  .Permalink  .RelPermalink  .Params ) }}
@@ -187,20 +181,16 @@
                 {{ end }}
             </table>
         {{ end }}
-    </div>
-{{ else if $typeIsSpecial }}
-    {{ if $typeIsWeightedPage }} <!-- https://github.com/gohugoio/hugo/blob/master/hugolib/taxonomy.go -->
-        <div class="debugprint_wrap">
+    {{ else if $typeIsSpecial }}
+        {{ if $typeIsWeightedPage }} <!-- https://github.com/gohugoio/hugo/blob/master/hugolib/taxonomy.go -->
             <table class="debugprint">
                 {{ printf "<tr><td>%s</td><td>W:%d</td></tr>" .Page.Title .Weight | safeHTML }}
             </table>
-        </div>
-    {{ end }}
-    <!-- Anything Else -->
-{{ else }}
-     <div class="debugprint_wrap">
+        {{ end }}
+        <!-- Anything Else -->
+    {{ else }}
         <table class="debugprint">
             <tr><td>{{ printf "%#v (<i>type:%s</i>)" $value $type | safeHTML }}</td></tr>
         </table>
-    </div>
-{{ end }}
+    {{ end }}
+</div>
