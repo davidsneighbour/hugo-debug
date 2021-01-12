@@ -8,6 +8,7 @@
 {{ $typeIsTime                 := (eq "time.Time" $type) }}
 {{ $typeIsSlice                := (findRE "^([[][]]|.*TaxonomyList|output\\.Formats|resource\\.Resources|.*navigation\\.Menu$|\\*?hugolib\\.Pages$|hugolib\\.OrderedTaxonomy$|hugolib\\.WeightedPages)" $type) }} <!-- match ^[] -->
 {{ $typeIsMap                  := (findRE "^(map[[].+[]]|.*SiteSocial|.*navigation\\.Menus$|hugolib\\.AuthorList|hugolib\\.Taxonomy|maps\\.Params)" $type) }} <!-- match ^map[*] -->
+{{ $typeIsPosition             := (eq "text.Position" $type) }}
 
 {{ $typeIsSiteInfo             := (eq "*hugolib.SiteInfo" $type) }}
 {{ $typeIsGitInfo              := (findRE "^.*gitmap\\.GitInfo" $type) }}
@@ -24,6 +25,16 @@
 
 {{ if $typeIsBool }}
     {{ printf `<span class="debugprint"><span class="%#v">%#v</span></span>` $value $value | safeHTML }}
+{{ else if $typeIsPosition }}
+    <div class="debugprint_wrap">
+        <table class="debugprint">
+            <tr><th class="key">Key</th><th class="type">Type</th><th class="value">Value</th></tr>
+            <tr><th>Filename</th><td>string</td><td>{{ $value.Filename }}</td></tr>
+            <tr><th>Offset</th><td>int</td><td>{{ $value.Offset }}</td></tr>
+            <tr><th>LineNumber</th><td>int</td><td>{{ $value.LineNumber }}</td></tr>
+            <tr><th>ColumnNumber</th><td>int</td><td>{{ $value.ColumnNumber }}</td></tr>
+        </table>
+    </div>
 {{ else if (or $typeIsNumber $typeIsString) }}
     <!-- Use %#v for strings so that their values always get double-quoted.
          That is helpful to tell if a space char is within a string. -->
