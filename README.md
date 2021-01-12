@@ -32,6 +32,9 @@ To print a variable in one of your layouts:
 {{ partial "debugprint" .GitInfo }}
 {{ partial "debugprint" .Resources }}
 {{ partial "debugprint" .File }}
+
+<!-- in shortcodes -->
+{{ partial "debugprint" .Position }}
 ```
 
 Exchange the `.` (dot) with whatever variable you want to debug. Sub-collections or sub-slices might require extra setup to be debugged, depending on the structure and type of the values.
