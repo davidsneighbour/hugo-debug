@@ -33,8 +33,8 @@ To print a variable in one of your layouts:
 {{ partial "debugprint" .Resources }}
 {{ partial "debugprint" .File }}
 
-<!-- in shortcodes -->
-{{ partial "debugprint" .Position }}
+{{/* in shortcodes */}}
+{{ partial "debugprint" .Position }} <!-- this will show where the shortcode was called -->
 ```
 
 Exchange the `.` (dot) with whatever variable you want to debug. Sub-collections or sub-slices might require extra setup to be debugged, depending on the structure and type of the values.
