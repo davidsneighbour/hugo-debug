@@ -169,8 +169,8 @@
         {{ end }}
     {{ else if $typeIsInterface }}
         {{ if $typeIsResource }} <!-- https://github.com/gohugoio/hugo/blob/master/resource/resource.go -->
-            {{ $ResourceVarNames   := (slice "Name" "Title" "ResourceType" "Permalink" "RelPermalink" "Params") }}
-            {{ $ResourceVarSymbols := (slice .Name  .Title  .ResourceType  .Permalink  .RelPermalink  .Params ) }}
+            {{ $ResourceVarNames   := (slice "Name" "Title" "ResourceType" "Permalink" "RelPermalink" "Params" "MediaType") }}
+            {{ $ResourceVarSymbols := (slice .Name  .Title  .ResourceType  .Permalink  .RelPermalink  .Params  .MediaType ) }}
             <!-- There's .AbsSourceFilename too, but it's not very useful. -->
             <table class="debugprint">
                 <tr><th class="key">Resource Variable</th><th class="value">Value</th></tr>
