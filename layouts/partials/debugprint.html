@@ -23,6 +23,8 @@
 {{ $typeIsInterface            := (or $typeIsResource) }}
 {{ $typeIsSpecial              := (or $typeIsWeightedPage) }}
 
+{{- $config := site.Data.dnb.debugprint.config -}}
+
 <div class="debugprint_wrap">
     {{ if $typeIsBool }}
         {{ printf `<span class="debugprint"><span class="%#v">%#v</span></span>` $value $value | safeHTML }}
