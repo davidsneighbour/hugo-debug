@@ -3,8 +3,13 @@ css = [
     "scss/debugprint"
 ]
 
-[production]
-# set this to false to enable debugging in a production environment. This
+# verbosity
+# this currently does not much, but at a later point will result in more or less
+# verbose output. setting it to 10 will result in some more verbosity around the
+# table of the output. Anything lower will show only the table.
+verbosity = 10
+
+# set this to true to enable debugging in a production environment. This
 # "production" environment is detected by checking the `.Site.IsServer`
 # variable.
-disable = true
+showInProduction = false
