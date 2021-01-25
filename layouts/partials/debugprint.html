@@ -10,6 +10,7 @@
 {{ $typeIsMap                  := (findRE "^(map[[].+[]]|.*SiteSocial|.*navigation\\.Menus$|hugolib\\.AuthorList|hugolib\\.Taxonomy|maps\\.Params)" $type) }} <!-- match ^map[*] -->
 {{ $typeIsPosition             := (eq "text.Position" $type) }}
 
+{{ $typeIsShortcode            := (eq "*hugolib.ShortcodeWithPage" $type) }}
 {{ $typeIsSiteInfo             := (eq "*hugolib.SiteInfo" $type) }}
 {{ $typeIsGitInfo              := (findRE "^.*gitmap\\.GitInfo" $type) }}
 {{ $typeIsOutputFormat         := (eq "output.Format" $type) }}
@@ -46,6 +47,34 @@
         {{ range $value }}
             {{ partial "debugprint.html" . }} <!-- Recursive call FTW! -->
         {{ end }}
+    {{ else if $typeIsShortcode }}
+
+        {{/*
+          &hugolib.ShortcodeWithPage{
+            Params:map[string]interface {}{"name":"name"},
+            Inner:"",
+            Page:(*hugolib.pageForShortcode)(0xc00704e600),
+            Parent:(*hugolib.ShortcodeWithPage)(nil),
+            Name:"figure",
+            IsNamedParams:true,
+            Ordinal:0,
+            posInit:sync.Once{done:0x0, m:sync.Mutex{state:0, sema:0x0}},
+            posOffset:812,
+            pos:text.Position{Filename:"", Offset:0, LineNumber:0, ColumnNumber:0},
+            scratch:(*maps.Scratch)(nil)
+          } (type:*hugolib.ShortcodeWithPage)
+        */}}
+        <table class="debugprint">
+            <tr><th class="key">Shortcode Variable</th><th class="value">Value</th></tr>
+            <tr><td class="key">Name</td><td class="value">{{ .Name }}</td></tr>
+            <tr><td class="key">Ordinal</td><td class="value">{{ .Ordinal }}</td></tr>
+            <tr><td class="key">Parent</td><td class="value">{{ .Parent }}</td></tr>
+            <tr><td class="key">Page</td><td class="value">{{ partial "debugprint" .Page }}</td></tr>
+            <tr><td class="key">Position</td><td class="value">{{ partial "debugprint" .Position }}</td></tr>
+            <tr><td class="key">IsNamedParams</td><td class="value">{{ partial "debugprint" .IsNamedParams }}</td></tr>
+            <tr><td class="key">Params</td><td class="value">{{ partial "debugprint" .Params }}</td></tr>
+            <tr><td class="key">Inner</td><td class="value">{{ partial "debugprint" .Inner }}</td></tr>
+        </table>
     {{ else if $typeIsMap }}
         {{ if (gt (len $value) 0) }}
             <table class="debugprint">
