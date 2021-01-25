@@ -1,7 +1,7 @@
 {
   "name": "@dnb-hugo/debugprint",
   "description": "Hugo's missing debugging partial.",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "author": {
     "name": "Kaushal Modi",
     "web": "https://github.com/kaushalmodi"
