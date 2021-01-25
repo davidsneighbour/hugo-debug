@@ -36,6 +36,7 @@ To print a variable in one of your layouts:
 {{ partial "debugprint" .File }}
 
 {{/* in shortcodes */}}
+{{ partial "debugprint" . }} <!-- this will debug the internals of the shortcode -->
 {{ partial "debugprint" .Position }} <!-- this will show where the shortcode was called -->
 ```
 
