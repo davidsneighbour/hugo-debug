@@ -26,17 +26,11 @@
     "@dnb-hugo/remark-preset-lint": "github:dnb-hugo/remark-preset-lint",
     "@dnb-hugo/standard-version-config": "github:dnb-hugo/standard-version-config",
     "@dnb-hugo/stylelint-config": "github:dnb-hugo/stylelint-config",
-    "husky": "4.3.8",
     "npm-run-all": "4.1.5",
     "standard-version": "9.1.0",
     "stylelint": "13.9.0"
   },
   "homepage": "https://github.com/dnb-hugo/debugprint#readme",
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "license": "GPL-3.0-only",
   "maintainer": {
     "name": "Patrick Kollitsch",
