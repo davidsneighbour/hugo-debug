@@ -7,10 +7,10 @@ table.debugprint {
   @extend .table-hover;
 
   .true {
-    color: map-get($theme-colors, 'success');
+    @extend .text-success;
   }
 
   .false {
-    color: map-get($theme-colors, 'danger');
+    @extend .text-danger;
   }
 }

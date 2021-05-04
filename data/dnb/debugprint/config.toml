@@ -1,8 +1,3 @@
-# plugins
-css = [
-    "scss/debugprint"
-]
-
 # verbosity
 # this currently does not much, but at a later point will result in more or less
 # verbose output. setting it to 10 will result in some more verbosity around the
@@ -13,3 +8,9 @@ verbosity = 10
 # "production" environment is detected by checking the `.Site.IsServer`
 # variable.
 showInProduction = false
+
+[plugins]
+scss = [
+  "scss/_debugprint.scss"
+]
+scssTemplates = []
