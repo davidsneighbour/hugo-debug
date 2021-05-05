@@ -22,7 +22,6 @@
   },
   "devDependencies": {
     "@dnb-hugo/browserslist-config": "2.2.4",
-    "@dnb-hugo/commitlint-config": "2.0.13",
     "@dnb-hugo/remark-config": "2.0.6",
     "@dnb-hugo/standard-version-config": "2.0.5",
     "@dnb-hugo/stylelint-config": "2.0.19",
