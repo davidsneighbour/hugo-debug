@@ -36,6 +36,7 @@
     "lint": "run-p lint:**",
     "lint:package": "fixpack",
     "lint:scss": "stylelint assets/scss",
+    "lint:remark": "remark .",
     "release": "standard-version --release-as patch -a -t \"v\" && git push --follow-tags origin main",
     "release-major": "standard-version --release-as major -a -t \"v\" && git push --follow-tags origin main",
     "release-next": "standard-version --release-as minor -a -t \"v\" && git push --follow-tags origin main"
