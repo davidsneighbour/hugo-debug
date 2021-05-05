@@ -1,6 +1,6 @@
 {
   "name": "@dnb-hugo/debugprint",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "license": "GPL-3.0-only",
   "description": "Hugo's missing debugging partial.",
   "author": {
