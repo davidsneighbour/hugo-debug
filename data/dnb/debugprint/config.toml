@@ -2,4 +2,3 @@
 scss = [
   "scss/_debugprint.scss"
 ]
-scssTemplates = []
