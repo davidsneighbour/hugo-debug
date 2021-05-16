@@ -7,10 +7,10 @@ table.debugprint {
   @extend .table-hover;
 
   .true {
-    @extend .text-success;
+    color: green;
   }
 
   .false {
-    @extend .text-danger;
+    color: red;
   }
 }
