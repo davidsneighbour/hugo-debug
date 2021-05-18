@@ -21,7 +21,7 @@
     "url": "https://github.com/dnb-hugo/debugprint/issues"
   },
   "devDependencies": {
-    "@dnb-hugo/browserslist-config": "2.2.9",
+    "@dnb-hugo/browserslist-config": "2.2.11",
     "@dnb-hugo/remark-config": "2.0.13",
     "@dnb-hugo/standard-version-config": "2.0.10",
     "@dnb-hugo/stylelint-config": "2.0.26",
