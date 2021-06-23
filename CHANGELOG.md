@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.16](https://github.com/dnb-hugo/debugprint/compare/v1.0.15...v1.0.16) (2021-06-23)
+
+
+### Chore
+
+* remove max version restraint from config ([3ad7266](https://github.com/dnb-hugo/debugprint/commit/3ad726634be3b93765d827e2be67fdd91e5bff74))
+
 ### [1.0.15](https://github.com/dnb-hugo/debugprint/compare/v1.0.14...v1.0.15) (2021-06-22)
 
 
