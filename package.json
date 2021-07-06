@@ -1,8 +1,8 @@
 {
-  "name": "@dnb-hugo/debugprint",
+  "name": "@dnb-hugo/debug",
   "version": "1.0.16",
   "license": "GPL-3.0-only",
-  "description": "Hugo's missing debugging partial.",
+  "description": "Hugo's missing debugging partials.",
   "author": {
     "name": "Kaushal Modi",
     "web": "https://github.com/kaushalmodi"
@@ -12,13 +12,13 @@
     "email": "patrick@davids-neighbour.com",
     "web": "https://davids-neighbour.com"
   },
-  "homepage": "https://github.com/dnb-hugo/debugprint#readme",
+  "homepage": "https://github.com/dnb-hugo/debug#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dnb-hugo/debugprint.git"
+    "url": "git+https://github.com/dnb-hugo/debug.git"
   },
   "bugs": {
-    "url": "https://github.com/dnb-hugo/debugprint/issues"
+    "url": "https://github.com/dnb-hugo/debug/issues"
   },
   "devDependencies": {
     "@dnb-hugo/browserslist-config": "3.0.13",
