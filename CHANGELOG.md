@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/dnb-hugo/debug/compare/v1.0.16...v1.2.0) (2021-07-06)
+
+
+### Chore
+
+* rename package to debug ([b6b5b01](https://github.com/dnb-hugo/debug/commit/b6b5b013692de8bf98f572c57f0795bd98d96c6c))
+
 ### [1.0.16](https://github.com/dnb-hugo/debugprint/compare/v1.0.15...v1.0.16) (2021-06-23)
 
 

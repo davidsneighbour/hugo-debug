@@ -1,0 +1,50 @@
+{{- /*
+
+debug information into the CLI and log
+
+call:
+{{- partial "func/debug"
+      (dict
+        "message" "going into PostProcessing"
+        "context" .
+        "severity" "warn"
+        "level" 4
+      )
+-}}
+
+parameters:
+message - message to print
+context - the dot
+severity - fatal, error, warn(ing), info (default), debug
+level - 0 to 10 (default 5)
+
+*/ -}}
+
+{{- $config := site.Params.dnb.global -}}
+{{ $config2 := site.Data.dnb.functions.config }}
+
+{{- if eq $config2.setup.disableNote false -}}
+  {{- warnf "[%s/debug-0] Additional logging by dnb-hugo (see %s)" $config2.namespace $config2.loglink -}}
+{{- end -}}
+{{- $namespace := $config.namespace | default "dnb" -}}
+{{- $severity := .severity | default "info" -}}
+{{- $level := 0 -}}
+
+{{- if eq $severity "debug" -}}
+  {{- $level = 9 -}}
+{{- else if eq $severity "info" -}}
+  {{- $level = 7 -}}
+{{- else if eq $severity "warn" -}}
+  {{- $level = 5 -}}
+{{- else if eq $severity "error" -}}
+  {{- $level = 3 -}}
+{{- else if eq $severity "fatal" -}}
+  {{- $level = 1 -}}
+{{- end -}}
+{{- if isset . "level" -}}
+  {{- $level = (int .level) -}}
+{{- end -}}
+
+{{- if le $level (int $config.debug) -}}
+  {{- warnf (printf "[%s/%s-%v] %s" $namespace $severity $level .message) -}}
+{{- end -}}
