@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/dnb-hugo/debug/compare/v1.2.0...v1.2.1) (2021-07-06)
+
+
+### Bug Fixes
+
+* call to partial in docs of debug.html ([f76d86a](https://github.com/dnb-hugo/debug/commit/f76d86af3e52cb30a41dd127d2cd45a90efe6784))
+
 ## [1.2.0](https://github.com/dnb-hugo/debug/compare/v1.0.16...v1.2.0) (2021-07-06)
 
 
