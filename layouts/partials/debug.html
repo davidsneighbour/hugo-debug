@@ -46,5 +46,9 @@ level - 0 to 10 (default 5)
 {{- end -}}
 
 {{- if le $level (int $config.debug) -}}
-  {{- warnf (printf "[%s/%s-%v] %s" $namespace $severity $level .message) -}}
+  {{- if le $level 3 -}}
+    {{- errorf (printf "[%s/%s-%v] %s" $namespace $severity $level .message) -}}
+  {{- else -}}
+    {{- warnf (printf "[%s/%s-%v] %s" $namespace $severity $level .message) -}}
+  {{- end -}}
 {{- end -}}
