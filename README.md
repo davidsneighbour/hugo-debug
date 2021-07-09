@@ -1,4 +1,4 @@
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/6f080031f82149f0a2f8e7ebdccfcc9f)](https://www.codacy.com/gh/dnb-hugo/debugprint/dashboard)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/6f080031f82149f0a2f8e7ebdccfcc9f)](https://www.codacy.com/gh/dnb-hugo/debug/dashboard)
 
 Hugo's missing debugging partials.
 
@@ -54,7 +54,7 @@ To debug page data from within a Markdown file:
 {{< debugprint param="bla" >}} <!-- debugs .Params.bla -->
 ```
 
-Debugging from within Markdown requires very explicit configuration in the shortcode template. [Open a new issue](https://github.com/dnb-hugo/debugprint/issues/new) if you require a specific debugging subject.
+Debugging from within Markdown requires very explicit configuration in the shortcode template. [Open a new issue](https://github.com/dnb-hugo/debug/issues/new) if you require a specific debugging subject.
 
 ## Other elements in DNB Hugo
 
