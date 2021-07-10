@@ -1,16 +1,17 @@
-/* stylelint-disable at-rule-no-unknown */
-table.debugprint {
+.debugprint {
+  td, th {
+    @extend .align-top;
+  }
+  .true {
+    @extend .text-success;
+  }
+
+  .false {
+    @extend .text-danger;
+  }
   @extend .table;
   @extend .table-light;
   @extend .table-bordered;
   @extend .table-sm;
   @extend .table-hover;
-
-  .true {
-    color: green;
-  }
-
-  .false {
-    color: red;
-  }
 }
