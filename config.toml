@@ -3,8 +3,8 @@ extended = false
 min = "0.56.0"
 
 [[module.mounts]]
-source = "assets"
-target = "assets"
+source = "assets/scss/_debugprint.scss"
+target = "assets/scss/_debugprint.scss"
 
 [[module.mounts]]
 source = "data"
