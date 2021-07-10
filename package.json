@@ -21,12 +21,10 @@
     "url": "https://github.com/dnb-hugo/debug/issues"
   },
   "devDependencies": {
-    "@dnb-hugo/browserslist-config": "3.0.21",
-    "@dnb-hugo/remark-config": "3.0.17",
-    "@dnb-hugo/standard-version-config": "3.0.17",
-    "@dnb-hugo/stylelint-config": "3.0.17",
-    "npm-run-all": "4.1.5",
-    "rimraf": "3.0.2"
+    "@dnb-hugo/browserslist-config": "3.0.24",
+    "@dnb-hugo/standard-version-config": "3.0.24",
+    "@dnb-hugo/stylelint-config": "3.0.24",
+    "@dnb-hugo/tools": "3.0.13"
   },
   "scripts": {
     "clean": "run-p clean:**",
@@ -34,7 +32,6 @@
     "clean:npm": "rimraf node_modules",
     "lint": "run-p lint:**",
     "lint:package": "fixpack",
-    "lint:remark": "remark .",
     "lint:scss": "stylelint assets/scss",
     "release": "standard-version --release-as patch -a -t \"v\" && git push --follow-tags origin main",
     "release-major": "standard-version --release-as major -a -t \"v\" && git push --follow-tags origin main",
