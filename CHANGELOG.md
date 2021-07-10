@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.3](https://github.com/dnb-hugo/debug/compare/v1.2.2...v1.2.3) (2021-07-10)
+
+
+### Chore
+
+* cleanup setup ([0c2739c](https://github.com/dnb-hugo/debug/commit/0c2739c33051f196fc919f8ac1799da60864e8c8))
+* **deps:** update dependencies ([ea57092](https://github.com/dnb-hugo/debug/commit/ea57092ad7ab9e5e9e41867ca9e8fa89c9fbaedb))
+* **deps:** update dependencies ([098d9cf](https://github.com/dnb-hugo/debug/commit/098d9cff20346cae21e5b95c700a05219c1ef60f))
+
 ### [1.2.1](https://github.com/dnb-hugo/debug/compare/v1.2.0...v1.2.1) (2021-07-06)
 
 
