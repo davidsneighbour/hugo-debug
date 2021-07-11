@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.4](https://github.com/dnb-hugo/debug/compare/v1.2.3...v1.2.4) (2021-07-11)
+
+
+### Bug Fixes
+
+* disable ignore errors via slug, not working yet ([c101fef](https://github.com/dnb-hugo/debug/commit/c101fefa4a8eeda57cc2395b1b279c814574cced))
+
 ### [1.2.3](https://github.com/dnb-hugo/debug/compare/v1.2.2...v1.2.3) (2021-07-10)
 
 
