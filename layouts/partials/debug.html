@@ -25,9 +25,9 @@ slug - id to disable debugging based on configuration
 {{- $config := site.Params.dnb.global -}}
 {{- $config2 := site.Data.dnb.functions.config -}}
 
-{{- if in site.Data.dnb.debugprint.config.ignoreErrors .slug -}}
-  {{- return -}}
-{{- end -}}
+{{/*{{- if in site.Data.dnb.debugprint.config.ignoreErrors .slug -}}*/}}
+{{/*  {{- return -}}*/}}
+{{/*{{- end -}}*/}}
 
 {{- if eq $config2.setup.disableNote false -}}
   {{- warnf "[%s/debug-0] Additional logging by dnb-hugo (see %s)" $config2.namespace $config2.loglink -}}
