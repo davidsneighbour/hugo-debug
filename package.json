@@ -21,10 +21,10 @@
     "url": "https://github.com/dnb-org/debug/issues"
   },
   "devDependencies": {
-    "@dnb-org/browserslist-config": "3.0.24",
-    "@dnb-org/standard-version-config": "3.0.24",
-    "@dnb-org/stylelint-config": "3.0.24",
-    "@dnb-org/tools": "3.0.13"
+    "@dnb-org/browserslist-config": "3.1.0",
+    "@dnb-org/standard-version-config": "3.1.0",
+    "@dnb-org/stylelint-config": "3.1.0",
+    "@dnb-org/tools": "3.1.0"
   },
   "scripts": {
     "clean": "run-p clean:**",
