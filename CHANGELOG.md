@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/dnb-org/debug/compare/v1.2.4...v1.3.0) (2021-07-13)
+
+
+### Chore
+
+* change dnb-hugo to dnb-org organisation ([6e23bf1](https://github.com/dnb-org/debug/commit/6e23bf1c912fff0536c2cb43c4b49994f2d7e788))
+* **deps:** update dependencies ([63dec88](https://github.com/dnb-org/debug/commit/63dec8827635d23a518729beefd914e9e3a5c210))
+
 ### [1.2.4](https://github.com/dnb-org/debug/compare/v1.2.3...v1.2.4) (2021-07-11)
 
 
