@@ -1,6 +1,6 @@
 {
   "plugins": [
-    "@dnb-hugo/remark-config",
+    "@dnb-org/remark-config",
     ["remark-lint-write-good", false]
   ]
 }

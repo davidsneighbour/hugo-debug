@@ -1,1 +1,1 @@
-extends @dnb-hugo/browserslist-config
+extends @dnb-org/browserslist-config

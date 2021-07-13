@@ -1,3 +1,3 @@
-module github.com/dnb-hugo/debug
+module github.com/dnb-org/debug
 
 go 1.16

@@ -1,4 +1,4 @@
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/6f080031f82149f0a2f8e7ebdccfcc9f)](https://www.codacy.com/gh/dnb-hugo/debug/dashboard)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/6f080031f82149f0a2f8e7ebdccfcc9f)](https://www.codacy.com/gh/dnb-org/debug/dashboard)
 
 Hugo's missing debugging partials.
 
@@ -6,7 +6,7 @@ Hugo's missing debugging partials.
 
 - This is a Hugo module to use while you are developing your theme or website.
 - The original of this module can be found at [kaushalmodi/hugo-debugprint](https://github.com/kaushalmodi/hugo-debugprint). 
-- This version is adapted to work with dnb-hugo themes and components and adds more ways to debug.
+- This version is adapted to work with dnb-org themes and components and adds more ways to debug.
 - If in doubt, use [@kaushalmodi's version](https://github.com/kaushalmodi/hugo-debugprint).
 
 ## Installation
@@ -16,7 +16,7 @@ Add the following code to your configuration:
 ```toml
 [module]
 [[module.imports]]
-path = "github.com/dnb-hugo/debug"
+path = "github.com/dnb-org/debug"
 disabled = false
 ```
 
@@ -54,7 +54,7 @@ To debug page data from within a Markdown file:
 {{< debugprint param="bla" >}} <!-- debugs .Params.bla -->
 ```
 
-Debugging from within Markdown requires very explicit configuration in the shortcode template. [Open a new issue](https://github.com/dnb-hugo/debug/issues/new) if you require a specific debugging subject.
+Debugging from within Markdown requires very explicit configuration in the shortcode template. [Open a new issue](https://github.com/dnb-org/debug/issues/new) if you require a specific debugging subject.
 
 ## Other elements in DNB Hugo
 
@@ -62,10 +62,10 @@ DNB Hugo are the elements that enhance and simplify your daily work with [Hugo, 
 
 | Element | Description |
 | :--- | :--- |
-| [blocks](https://github.com/dnb-hugo/blocks) | Blocks are reusable page elements like headers, footers, content display etc.|
-| [components](https://github.com/dnb-hugo/components) | Components are preconfigured features like automatic search index creation, sitemap and robots.txt creation, etc. |
-| [debugprint](https://github.com/dnb-hugo/debug) | Hugo's missing debugging partial. |
-| [hooks](https://github.com/dnb-hugo/hooks) | Template hooks for Hugo. |
-| [libraries](https://github.com/dnb-hugo/libraries) | Libraries are a collection of often used external packages, conveniently configured as modules for Hugo. |
-| [shortcodes](https://github.com/dnb-hugo/shortcodes) | Shortcodes are content particles that helpfully solve repeated tasks, like presentation, galleries and so on. |
-| [testcontent](https://github.com/dnb-hugo/testcontent) | Testcontent is a collection of testing content. Obviously. |
+| [blocks](https://github.com/dnb-org/blocks) | Blocks are reusable page elements like headers, footers, content display etc.|
+| [components](https://github.com/dnb-org/components) | Components are preconfigured features like automatic search index creation, sitemap and robots.txt creation, etc. |
+| [debugprint](https://github.com/dnb-org/debug) | Hugo's missing debugging partial. |
+| [hooks](https://github.com/dnb-org/hooks) | Template hooks for Hugo. |
+| [libraries](https://github.com/dnb-org/libraries) | Libraries are a collection of often used external packages, conveniently configured as modules for Hugo. |
+| [shortcodes](https://github.com/dnb-org/shortcodes) | Shortcodes are content particles that helpfully solve repeated tasks, like presentation, galleries and so on. |
+| [testcontent](https://github.com/dnb-org/testcontent) | Testcontent is a collection of testing content. Obviously. |

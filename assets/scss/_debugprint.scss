@@ -1,4 +1,4 @@
-.debugprint {
+.debugprint table, table.debugprint {
   td, th {
     @extend .align-top;
   }
@@ -14,4 +14,7 @@
   @extend .table-bordered;
   @extend .table-sm;
   @extend .table-hover;
+
+  @extend .w-100;
+  @extend .overflow-auto;
 }

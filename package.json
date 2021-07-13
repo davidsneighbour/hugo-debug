@@ -1,5 +1,5 @@
 {
-  "name": "@dnb-hugo/debug",
+  "name": "@dnb-org/debug",
   "version": "1.2.4",
   "license": "GPL-3.0-only",
   "description": "Hugo's missing debugging partials.",
@@ -12,19 +12,19 @@
     "email": "patrick@davids-neighbour.com",
     "web": "https://davids-neighbour.com"
   },
-  "homepage": "https://github.com/dnb-hugo/debug#readme",
+  "homepage": "https://github.com/dnb-org/debug#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dnb-hugo/debug.git"
+    "url": "git+https://github.com/dnb-org/debug.git"
   },
   "bugs": {
-    "url": "https://github.com/dnb-hugo/debug/issues"
+    "url": "https://github.com/dnb-org/debug/issues"
   },
   "devDependencies": {
-    "@dnb-hugo/browserslist-config": "3.0.24",
-    "@dnb-hugo/standard-version-config": "3.0.24",
-    "@dnb-hugo/stylelint-config": "3.0.24",
-    "@dnb-hugo/tools": "3.0.13"
+    "@dnb-org/browserslist-config": "3.0.24",
+    "@dnb-org/standard-version-config": "3.0.24",
+    "@dnb-org/stylelint-config": "3.0.24",
+    "@dnb-org/tools": "3.0.13"
   },
   "scripts": {
     "clean": "run-p clean:**",
@@ -40,7 +40,7 @@
   "private": true,
   "commitlint": {
     "extends": [
-      "@dnb-hugo/commitlint-config"
+      "@dnb-org/commitlint-config"
     ]
   },
   "config": {

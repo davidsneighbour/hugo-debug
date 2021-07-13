@@ -30,7 +30,7 @@ slug - id to disable debugging based on configuration
 {{/*{{- end -}}*/}}
 
 {{- if eq $config2.setup.disableNote false -}}
-  {{- warnf "[%s/debug-0] Additional logging by dnb-hugo (see %s)" $config2.namespace $config2.loglink -}}
+  {{- warnf "[%s/debug-0] Additional logging by dnb-org (see %s)" $config2.namespace $config2.loglink -}}
 {{- end -}}
 {{- $namespace := $config.namespace | default "dnb" -}}
 {{- $severity := .severity | default "info" -}}
