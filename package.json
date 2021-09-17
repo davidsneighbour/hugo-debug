@@ -38,6 +38,9 @@
     "release-next": "standard-version --release-as minor -a -t \"v\" && git push --follow-tags origin main"
   },
   "private": true,
+  "browserslist": [
+    "extends @dnb-org/browserslist-config"
+  ],
   "commitlint": {
     "extends": [
       "@dnb-org/commitlint-config"
