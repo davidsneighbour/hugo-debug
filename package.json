@@ -13,10 +13,7 @@
     "web": "https://davids-neighbour.com"
   },
   "homepage": "https://github.com/dnb-org/debug#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dnb-org/debug.git"
-  },
+  "repository": "dnb-org/debug",
   "bugs": {
     "url": "https://github.com/dnb-org/debug/issues"
   },
@@ -31,7 +28,6 @@
     "clean:local": "rimraf package-lock.json",
     "clean:npm": "rimraf node_modules",
     "lint": "run-p lint:**",
-    "lint:package": "fixpack",
     "lint:scss": "stylelint assets/scss",
     "release": "standard-version --release-as patch -a -t \"v\" && git push --follow-tags origin main",
     "release-major": "standard-version --release-as major -a -t \"v\" && git push --follow-tags origin main",
