@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@dnb-org/browserslist-config": "3.2.20",
-    "@dnb-org/standard-version-config": "3.2.8",
+    "@dnb-org/standard-version-config": "3.2.22",
     "@dnb-org/stylelint-config": "3.2.8",
     "@dnb-org/tools": "3.2.10"
   },
