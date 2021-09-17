@@ -17,6 +17,9 @@
   "bugs": {
     "url": "https://github.com/dnb-org/debug/issues"
   },
+  "dependencies": {
+    "@dnb-org/remark-config": "^3.2.22"
+  },
   "devDependencies": {
     "@dnb-org/browserslist-config": "3.2.23",
     "@dnb-org/standard-version-config": "3.2.22",
@@ -61,7 +64,7 @@
       ]
     ]
   },
-  "dependencies": {
-    "@dnb-org/remark-config": "^3.2.22"
+  "stylelint": {
+    "extends": "@dnb-org/stylelint-config-dnb"
   }
 }
