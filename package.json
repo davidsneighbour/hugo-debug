@@ -50,5 +50,10 @@
     "commitizen": {
       "path": "./node_modules/cz-customizable"
     }
+  },
+  "eslintConfig": {
+    "extends": [
+      "@dnb-org/eslint-config"
+    ]
   }
 }
