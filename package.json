@@ -51,5 +51,17 @@
     "extends": [
       "@dnb-org/eslint-config"
     ]
+  },
+  "remarkConfig": {
+    "plugins": [
+      "@dnb-org/remark-config",
+      [
+        "remark-lint-write-good",
+        false
+      ]
+    ]
+  },
+  "dependencies": {
+    "@dnb-org/remark-config": "^3.2.22"
   }
 }

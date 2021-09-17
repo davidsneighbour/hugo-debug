@@ -1,6 +1,0 @@
-{
-  "plugins": [
-    "@dnb-org/remark-config",
-    ["remark-lint-write-good", false]
-  ]
-}
