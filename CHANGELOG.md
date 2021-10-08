@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.2](https://github.com/dnb-org/debug/compare/v1.3.1...v1.3.2) (2021-10-08)
+
+
+### Chore
+
+* **deps-dev:** bump @dnb-org/all from 3.2.22 to 3.2.25 ([#63](https://github.com/dnb-org/debug/issues/63)) ([4daa21a](https://github.com/dnb-org/debug/commit/4daa21a6e6d97b93de49d3efe10c4ef8bf41d6a8))
+* **deps:** update dependencies and fix package.json ([a450066](https://github.com/dnb-org/debug/commit/a45006639f350fe3a3c7783b9ea8ee47c43bbcda))
+
 ### [1.3.1](https://github.com/dnb-org/debug/compare/v1.3.0...v1.3.1) (2021-09-17)
 
 ## [1.3.0](https://github.com/dnb-org/debug/compare/v1.2.4...v1.3.0) (2021-07-13)
