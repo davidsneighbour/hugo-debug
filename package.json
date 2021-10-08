@@ -1,6 +1,6 @@
 {
   "name": "@dnb-org/debug",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "license": "GPL-3.0-only",
   "description": "GoHugo's missing debugging partials.",
   "author": {

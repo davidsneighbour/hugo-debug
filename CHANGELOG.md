@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.3](https://github.com/dnb-org/debug/compare/v1.3.2...v1.3.3) (2021-10-08)
+
+
+### Chore
+
+* remove lint script from release scripts ([d26d129](https://github.com/dnb-org/debug/commit/d26d1290bb2d2e0fec56d1cc32e1e96592e7a7c3))
+
 ### [1.3.2](https://github.com/dnb-org/debug/compare/v1.3.1...v1.3.2) (2021-10-08)
 
 
