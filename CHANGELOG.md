@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.4](https://github.com/dnb-org/debug/compare/v1.3.3...v1.3.4) (2021-10-15)
+
+
+### Build System
+
+* optimize build scripts ([150053f](https://github.com/dnb-org/debug/commit/150053fce5c7d2db981ea1adf0c7ced326279827))
+
+
+### Chore
+
+* **deps:** update dependencies ([0c3a1dc](https://github.com/dnb-org/debug/commit/0c3a1dc84b5f86d04becf7b191c32e1c2035d43c))
+
 ### [1.3.3](https://github.com/dnb-org/debug/compare/v1.3.2...v1.3.3) (2021-10-08)
 
 
