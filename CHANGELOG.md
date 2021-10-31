@@ -2,11 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## <small>1.3.5 (2021-10-29)</small>
-
-* chore(deps): update dependencies ([cfd7dd3](https://github.com/dnb-org/debug/commit/cfd7dd3))
+### [1.3.6](https://github.com/dnb-org/debug/compare/v1.3.5...v1.3.6) (2021-10-31)
 
 
+### Features
+
+* **fix:** add tables around single string debugging ([209ec67](https://github.com/dnb-org/debug/commit/209ec679f8f50a78b4f5c4cbb984619a7bb71df5)), closes [#69](https://github.com/dnb-org/debug/issues/69)
+
+
+### Documentation
+
+* update README.md ([c2df7b7](https://github.com/dnb-org/debug/commit/c2df7b71e98d4e9135e5110bdf7a6e523ddf5d05))
+
+
+### Chore
+
+* **config:** cleanup configuration ([d85f422](https://github.com/dnb-org/debug/commit/d85f4229f6fce4d8bd2bf9815ad18e741abab9e4))
+* **config:** remove unused packages ([53e4637](https://github.com/dnb-org/debug/commit/53e463708501fe4f76deeeda8e38052e9d1757ed))
 
 ### [1.3.4](https://github.com/dnb-org/debug/compare/v1.3.3...v1.3.4) (2021-10-15)
 
