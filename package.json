@@ -18,7 +18,7 @@
     "url": "https://github.com/dnb-org/debug/issues"
   },
   "devDependencies": {
-    "@dnb-org/all": "3.3.8"
+    "@dnb-org/standard-version-config": "3.3.8"
   },
   "scripts": {
     "clean": "run-p clean:**",
@@ -28,35 +28,6 @@
     "release:major": "standard-version --release-as major -a -t \"v\" && git push --follow-tags origin main",
     "release:minor": "standard-version --release-as minor -a -t \"v\" && git push --follow-tags origin main"
   },
-  "private": true,
-  "browserslist": [
-    "extends @dnb-org/browserslist-config"
-  ],
-  "commitlint": {
-    "extends": [
-      "@dnb-org/commitlint-config"
-    ]
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-customizable"
-    }
-  },
-  "eslintConfig": {
-    "extends": [
-      "@dnb-org/eslint-config"
-    ]
-  },
-  "remarkConfig": {
-    "plugins": [
-      "@dnb-org/remark-config",
-      [
-        "remark-lint-write-good",
-        false
-      ]
-    ]
-  },
-  "stylelint": {
-    "extends": "@dnb-org/stylelint-config-dnb"
-  }
+  "private": true
+
 }
