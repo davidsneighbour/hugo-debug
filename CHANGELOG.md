@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/dnb-org/debug/compare/v1.3.6...v1.4.0) (2021-10-31)
+
+
+### Features
+
+* rework config setup and add more documentation ([96f8d49](https://github.com/dnb-org/debug/commit/96f8d49b5fc35cfda28c0a769ecb57bb31838a2f))
+
 ### [1.3.6](https://github.com/dnb-org/debug/compare/v1.3.5...v1.3.6) (2021-10-31)
 
 
