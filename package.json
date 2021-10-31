@@ -18,7 +18,8 @@
     "url": "https://github.com/dnb-org/debug/issues"
   },
   "devDependencies": {
-    "@dnb-org/standard-version-config": "3.3.8"
+    "@dnb-org/standard-version-config": "3.3.7",
+    "@dnb-org/tools": "3.3.7"
   },
   "scripts": {
     "clean": "run-p clean:**",
