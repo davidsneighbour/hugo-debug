@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.1](https://github.com/dnb-org/debug/compare/v1.4.0...v1.4.1) (2021-10-31)
+
+
+### Chore
+
+* **config:** remove old data directory configuration ([9abd7a3](https://github.com/dnb-org/debug/commit/9abd7a3ae3a726adfc76cc22b46a4856722c5a6f))
+
 ## [1.4.0](https://github.com/dnb-org/debug/compare/v1.3.6...v1.4.0) (2021-10-31)
 
 
