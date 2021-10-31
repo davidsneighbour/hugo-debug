@@ -1,36 +1,11 @@
-{{- /*
+{{- $config := site.Params.dnb.debug -}}
 
-debug information into the CLI and log
-
-call:
-{{- partial "debug.html"
-      (dict
-        "message" "going into PostProcessing"
-        "context" .
-        "severity" "warn"
-        "level" 4
-        "slug" dnb-some-error
-      )
--}}
-
-parameters:
-message - message to print
-context - the dot
-severity - fatal, error, warn(ing), info (default), debug
-level - 0 to 10 (default 5)
-slug - id to disable debugging based on configuration
-
-*/ -}}
-
-{{- $config := site.Params.dnb.global -}}
-{{- $config2 := site.Data.dnb.functions.config -}}
-
-{{/*{{- if in site.Data.dnb.debugprint.config.ignoreErrors .slug -}}*/}}
+{{/*{{- if in site.Params.dnb.debug.ignoreErrors .slug -}}*/}}
 {{/*  {{- return -}}*/}}
 {{/*{{- end -}}*/}}
 
-{{- if eq $config2.setup.disableNote false -}}
-  {{- warnf "[%s/debug-0] Additional logging by dnb-org (see %s)" $config2.namespace $config2.loglink -}}
+{{- if eq ($config.disablenote | default false) false -}}
+  {{- warnf "[%s/debug-0] Additional logging by dnb-org (see %s)" $config.namespace $config.loglink -}}
 {{- end -}}
 {{- $namespace := $config.namespace | default "dnb" -}}
 {{- $severity := .severity | default "info" -}}
@@ -51,7 +26,7 @@ slug - id to disable debugging based on configuration
   {{- $level = (int .level) -}}
 {{- end -}}
 
-{{- if le $level (int $config.debug) -}}
+{{- if le $level (int $config.debuglevel) -}}
   {{- if le $level 3 -}}
     {{- errorf (printf "[%s/%s-%v] %s" $namespace $severity $level .message) -}}
   {{- else -}}

@@ -26,7 +26,7 @@
 {{ $typeIsSpecial              := (or $typeIsWeightedPage) }}
 
 <!-- get configuration -->
-{{- $config := site.Data.dnb.debugprint.config -}}
+{{- $config := site.Params.debug -}}
 
 {{ if $typeIsBool }}
   {{ printf `<span class="debugprint"><span class="%#v">%#v</span></span>` $value $value | safeHTML }}

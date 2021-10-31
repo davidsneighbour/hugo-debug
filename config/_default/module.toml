@@ -1,15 +1,11 @@
-[module.hugoVersion]
+[hugoVersion]
 extended = false
 min = "0.56.0"
 
-[[module.mounts]]
+[[mounts]]
 source = "assets/scss/_debugprint.scss"
 target = "assets/scss/_debugprint.scss"
 
-[[module.mounts]]
-source = "data"
-target = "data"
-
-[[module.mounts]]
+[[mounts]]
 source = "layouts"
 target = "layouts"

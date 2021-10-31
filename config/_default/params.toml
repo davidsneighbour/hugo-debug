@@ -1,0 +1,11 @@
+ignoreErrors = ["dnb-sample-error"]
+
+[dnb.debug]
+loglink = "https://dnbql.netlify.app/log"
+namespace = "dnb"
+debuglevel = 8
+
+[dnb.debug.plugins]
+scss = [
+  "scss/_debugprint.scss"
+]
