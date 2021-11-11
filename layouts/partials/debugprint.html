@@ -19,6 +19,7 @@
 {{ $typeIsMenuEntry            := (findRE "navigation\\.MenuEntry$" $type) }}
 {{ $typeIsOrderedTaxonomyEntry := (eq "hugolib.OrderedTaxonomyEntry" $type) }}
 {{ $typeIsWeightedPage         := (eq "hugolib.WeightedPage" $type) }}
+{{ $typeIsPager                := (eq "*page.Pager" $type) }}
 
 <!-- evaluate special type -->
 {{ $typeIsStruct               := (or $typeIsSiteInfo $typeIsGitInfo $typeIsOutputFormat $typeIsFileInfo $typeIsPage $typeIsMenuEntry $typeIsOrderedTaxonomyEntry) }}
@@ -30,6 +31,84 @@
 
 {{ if $typeIsBool }}
   {{ printf `<span class="debugprint"><span class="%#v">%#v</span></span>` $value $value | safeHTML }}
+{{ else if $typeIsPager }}
+    <table class="debugprint">
+    <tr>
+       <th class="align-top" class="key">Key</th>
+       <th class="align-top" class="type">Type</th>
+       <th class="align-top" class="value">Value</th>
+    </tr>
+    <tr>
+      <td>PageNumber</td>
+      <td>{{ printf `<span class="debugprint"><span class="%T">%T</span></span>` $value.PageNumber $value.PageNumber | safeHTML }}</td>
+      <td>{{ $value.PageNumber }}</td>
+    </tr>
+    <tr>
+      <td>URL</td>
+      <td>{{ printf `<span class="debugprint"><span class="%T">%T</span></span>` $value.URL $value.URL | safeHTML }}</td>
+      <td>{{ $value.URL }}</td>
+    </tr>
+    <tr>
+      <td>Pages</td>
+      <td>{{ printf `<span class="debugprint"><span class="%T">%T</span></span>` $value.Pages $value.Pages | safeHTML }}</td>
+      <td>{{ $value.Pages }}</td>
+    </tr>
+    <tr>
+      <td>NumberOfElements</td>
+      <td>{{ printf `<span class="debugprint"><span class="%T">%T</span></span>` $value.NumberOfElements $value.NumberOfElements | safeHTML }}</td>
+      <td>{{ $value.NumberOfElements }}</td>
+    </tr>
+    <tr>
+      <td>HasPrev</td>
+      <td>{{ printf `<span class="debugprint"><span class="%T">%T</span></span>` $value.HasPrev $value.HasPrev | safeHTML }}</td>
+      <td>{{ $value.HasPrev }}</td>
+    </tr>
+    <tr>
+      <td>Prev</td>
+      <td>{{ printf `<span class="debugprint"><span class="%T">%T</span></span>` $value.Prev $value.Prev | safeHTML }}</td>
+      <td>{{ $value.Prev }}</td>
+    </tr>
+    <tr>
+      <td>HasNext</td>
+      <td>{{ printf `<span class="debugprint"><span class="%T">%T</span></span>` $value.HasNext $value.HasNext | safeHTML }}</td>
+      <td>{{ $value.HasNext }}</td>
+    </tr>
+    <tr>
+      <td>Next</td>
+      <td>{{ printf `<span class="debugprint"><span class="%T">%T</span></span>` $value.Next $value.Next  | safeHTML }}</td>
+      <td>{{ $value.Next }}</td>
+    </tr>
+    <tr>
+      <td>First</td>
+      <td>{{ printf `<span class="debugprint"><span class="%T">%T</span></span>` $value.First $value.First | safeHTML }}</td>
+      <td>{{ $value.First }}</td>
+    </tr>
+    <tr>
+      <td>Last</td>
+      <td>{{ printf `<span class="debugprint"><span class="%T">%T</span></span>` $value.Last $value.Last | safeHTML }}</td>
+      <td>{{ $value.Last }}</td>
+    </tr>
+    <tr>
+      <td>Pagers</td>
+      <td>{{ printf `<span class="debugprint"><span class="%T">%T</span></span>` $value.Pagers $value.Pagers | safeHTML }}</td>
+      <td>{{ $value.Pagers }}</td>
+    </tr>
+    <tr>
+      <td>PageSize</td>
+      <td>{{ printf `<span class="debugprint"><span class="%T">%T</span></span>` $value.PageSize $value.PageSize | safeHTML }}</td>
+      <td>{{ $value.PageSize }}</td>
+    </tr>
+    <tr>
+      <td>TotalPages</td>
+      <td>{{ printf `<span class="debugprint"><span class="%T">%T</span></span>` $value.TotalPages $value.TotalPages | safeHTML }}</td>
+      <td>{{ $value.TotalPages }}</td>
+    </tr>
+    <tr>
+      <td>TotalNumberOfElements</td>
+      <td>{{ printf `<span class="debugprint"><span class="%T">%T</span></span>` $value.TotalNumberOfElements $value.TotalNumberOfElements | safeHTML }}</td>
+      <td>{{ $value.TotalNumberOfElements }}</td>
+    </tr>
+    </table>
 {{ else if $typeIsPosition }}
   <table class="debugprint">
     <tr>
