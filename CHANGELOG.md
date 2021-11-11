@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.2](https://github.com/dnb-org/debug/compare/v1.4.1...v1.4.2) (2021-11-11)
+
+
+### Features
+
+* add debugtype partial for printing out the type of a value ([0ece61e](https://github.com/dnb-org/debug/commit/0ece61e1158fab08f252674514ae5ad66d5e66b6))
+* **formatter:** add formatter for page.Pager ([ae4c15c](https://github.com/dnb-org/debug/commit/ae4c15c693ee7a57d186b8afd6185681005ca5ee))
+
 ### [1.4.1](https://github.com/dnb-org/debug/compare/v1.4.0...v1.4.1) (2021-10-31)
 
 
