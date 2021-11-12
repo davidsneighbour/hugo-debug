@@ -23,8 +23,8 @@
 
 <!-- evaluate special type -->
 {{ $typeIsStruct               := (or $typeIsSiteInfo $typeIsGitInfo $typeIsOutputFormat $typeIsFileInfo $typeIsPage $typeIsMenuEntry $typeIsOrderedTaxonomyEntry) }}
-{{ $typeIsInterface            := (or $typeIsResource) }}
-{{ $typeIsSpecial              := (or $typeIsWeightedPage) }}
+{{ $typeIsInterface            := $typeIsResource }}
+{{ $typeIsSpecial              := $typeIsWeightedPage }}
 
 <!-- get configuration -->
 {{- $config := site.Params.debug -}}
