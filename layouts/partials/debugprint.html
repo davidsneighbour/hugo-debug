@@ -304,9 +304,11 @@ else type is checked against type
   </table>
   {{ end }}
 {{ else }}
+  {{ if not $printed }}
   <table class="debugprint">
     <tr>
        <td class="align-top">{{ printf "%#v (<i>type:%s</i>)" $value $type | safeHTML }}</td>
     </tr>
   </table>
+  {{ end }}
 {{ end }}
