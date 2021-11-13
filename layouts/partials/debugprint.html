@@ -1,5 +1,8 @@
-{{ $value                      := . }}
-{{ $type                       := (printf "%T" $value) }}
+{{- $value      := . -}}
+{{- $type       := (printf "%T" $value) -}}
+{{- $config     := site.Params.dnb.debug -}}
+{{- $printed    := false -}}
+{{- $formatters := $config.formatters -}}
 
 <!-- evaluate type of context -->
 {{ $typeIsBool                 := (eq "bool" $type) }}
@@ -8,7 +11,6 @@
 {{ $typeIsTime                 := (eq "time.Time" $type) }}
 {{ $typeIsSlice                := (findRE "^([[][]]|.*TaxonomyList|output\\.Formats|resource\\.Resources|.*navigation\\.Menu$|\\*?hugolib\\.Pages$|hugolib\\.OrderedTaxonomy$|hugolib\\.WeightedPages)" $type) }}
 {{ $typeIsMap                  := (findRE "^(map[[].+[]]|.*SiteSocial|.*navigation\\.Menus$|hugolib\\.AuthorList|hugolib\\.Taxonomy|maps\\.Params)" $type) }}
-{{ $typeIsPosition             := (eq "text.Position" $type) }}
 {{ $typeIsShortcode            := (eq "*hugolib.ShortcodeWithPage" $type) }}
 {{ $typeIsSiteInfo             := (eq "*hugolib.SiteInfo" $type) }}
 {{ $typeIsGitInfo              := (findRE "^.*gitmap\\.GitInfo" $type) }}
@@ -19,124 +21,40 @@
 {{ $typeIsMenuEntry            := (findRE "navigation\\.MenuEntry$" $type) }}
 {{ $typeIsOrderedTaxonomyEntry := (eq "hugolib.OrderedTaxonomyEntry" $type) }}
 {{ $typeIsWeightedPage         := (eq "hugolib.WeightedPage" $type) }}
-{{ $typeIsPager                := (eq "*page.Pager" $type) }}
 
 <!-- evaluate special type -->
 {{ $typeIsStruct               := (or $typeIsSiteInfo $typeIsGitInfo $typeIsOutputFormat $typeIsFileInfo $typeIsPage $typeIsMenuEntry $typeIsOrderedTaxonomyEntry) }}
 {{ $typeIsInterface            := $typeIsResource }}
 {{ $typeIsSpecial              := $typeIsWeightedPage }}
 
-<!-- get configuration -->
-{{- $config := site.Params.debug -}}
+{{- /*
+range through configured formatters and print if it matches
+if `catch` is configured it will be used to try to match the type against
+else type is checked against type
+*/ -}}
+{{- range $index, $item := $config.formatters -}}
+  {{- $print := false -}}
+  {{ if not $printed }}
+    {{- with $item.catch }}
+      {{ if (findRE $item.catch $type) -}}
+        {{- $print = true -}}
+      {{ end }}
+    {{- else }}
+      {{ if eq $type .type -}}
+        {{- $print = true -}}
+      {{- end -}}
+    {{ end }}
+    {{- if $print -}}
+      {{- $formatterPath := printf "debugging-formatters/%s.html" .slug -}}
+      {{- partial $formatterPath (dict "value" $value "config" $item) -}}
+      {{- $printed = true -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
 
+<!-- going through old display methods -->
 {{ if $typeIsBool }}
-  {{ printf `<span class="debugprint"><span class="%#v">%#v</span></span>` $value $value | safeHTML }}
-{{ else if $typeIsPager }}
-    <table class="debugprint">
-    <tr>
-       <th class="align-top" class="key">Key</th>
-       <th class="align-top" class="type">Type</th>
-       <th class="align-top" class="value">Value</th>
-    </tr>
-    <tr>
-      <td>PageNumber</td>
-      <td>{{ partial "debugtype" $value.PageNumber }}</td>
-      <td>{{ $value.PageNumber }}</td>
-    </tr>
-    <tr>
-      <td>URL</td>
-      <td>{{ partial "debugtype" $value.URL }}</td>
-      <td>{{ $value.URL }}</td>
-    </tr>
-    <tr>
-      <td>Pages</td>
-      <td>{{ partial "debugtype" $value.Pages }}</td>
-      <td>{{ $value.Pages }}</td>
-    </tr>
-    <tr>
-      <td>NumberOfElements</td>
-      <td>{{ partial "debugtype" $value.NumberOfElements }}</td>
-      <td>{{ $value.NumberOfElements }}</td>
-    </tr>
-    <tr>
-      <td>HasPrev</td>
-      <td>{{ partial "debugtype" $value.HasPrev }}</td>
-      <td>{{ $value.HasPrev }}</td>
-    </tr>
-    <tr>
-      <td>Prev</td>
-      <td>{{ partial "debugtype" $value.Prev }}</td>
-      <td>{{ $value.Prev }}</td>
-    </tr>
-    <tr>
-      <td>HasNext</td>
-      <td>{{ partial "debugtype" $value.HasNext }}</td>
-      <td>{{ $value.HasNext }}</td>
-    </tr>
-    <tr>
-      <td>Next</td>
-      <td>{{ partial "debugtype" $value.Next }}</td>
-      <td>{{ $value.Next }}</td>
-    </tr>
-    <tr>
-      <td>First</td>
-      <td>{{ partial "debugtype" $value.First }}</td>
-      <td>{{ $value.First }}</td>
-    </tr>
-    <tr>
-      <td>Last</td>
-      <td>{{ partial "debugtype" $value.Last }}</td>
-      <td>{{ $value.Last }}</td>
-    </tr>
-    <tr>
-      <td>Pagers</td>
-      <td>{{ partial "debugtype" $value.Pagers }}</td>
-      <td>{{ $value.Pagers }}</td>
-    </tr>
-    <tr>
-      <td>PageSize</td>
-      <td>{{ partial "debugtype" $value.PageSize }}</td>
-      <td>{{ $value.PageSize }}</td>
-    </tr>
-    <tr>
-      <td>TotalPages</td>
-      <td>{{ partial "debugtype" $value.TotalPages }}</td>
-      <td>{{ $value.TotalPages }}</td>
-    </tr>
-    <tr>
-      <td>TotalNumberOfElements</td>
-      <td>{{ partial "debugtype" $value.TotalNumberOfElements }}</td>
-      <td>{{ $value.TotalNumberOfElements }}</td>
-    </tr>
-    </table>
-{{ else if $typeIsPosition }}
-  <table class="debugprint">
-    <tr>
-       <th class="align-top" class="key">Key</th>
-       <th class="align-top" class="type">Type</th>
-       <th class="align-top" class="value">Value</th>
-    </tr>
-    <tr>
-       <th class="align-top">Filename</th>
-       <td class="align-top">string</td>
-       <td class="align-top">{{ $value.Filename }}</td>
-    </tr>
-    <tr>
-       <th class="align-top">Offset</th>
-       <td class="align-top">int</td>
-       <td class="align-top">{{ $value.Offset }}</td>
-    </tr>
-    <tr>
-       <th class="align-top">LineNumber</th>
-       <td class="align-top">int</td>
-       <td class="align-top">{{ $value.LineNumber }}</td>
-    </tr>
-    <tr>
-       <th class="align-top">ColumnNumber</th>
-       <td class="align-top">int</td>
-       <td class="align-top">{{ $value.ColumnNumber }}</td>
-    </tr>
-  </table>
+  {{ partial "debugging-formatters/bool.html" $value }}
 {{ else if (or $typeIsNumber $typeIsString) }}
   <!-- Use %#v for strings so that their values always get double-quoted.
        That is helpful to tell if a space char is within a string. -->
