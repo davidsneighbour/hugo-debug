@@ -11,4 +11,9 @@ for TOOL in "${REQUIRED_TOOLS[@]}"; do
   fi
 done
 
+# adding data directory for new build information
+git add data/dnb/debug/build.json
+git commit --amend --no-edit
+
+# push release to GitHub
 git push --follow-tags origin main
