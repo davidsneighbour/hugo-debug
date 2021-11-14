@@ -2,6 +2,7 @@ package-lock.json
 bin/replacements
 resources
 scratch/
+.hugo_build.lock
 
 # Created by https://www.toptal.com/developers/gitignore/api/go,node,hugo,sonar,sonarqube,sublimetext,phpstorm
 # Edit at https://www.toptal.com/developers/gitignore?templates=go,node,hugo,sonar,sonarqube,sublimetext,phpstorm
