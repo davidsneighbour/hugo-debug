@@ -185,6 +185,12 @@ Whatever your issue is, please be as precise as possible and add enough informat
 
 I welcome contributions in form of pull requests. There are no guidelines yet as to how a pull request should be done, so please be as extensive as possible about the reasoning behind your changes and why you think it will be a good addition. Typos of course can be merged without too much discussion.
 
+DNB Org uses Codacy to keep some modest code quality. Keep an eye on your pull requests Codacy badge (on the README.md top of your branch). "If it's not A it's not Ok" ;)
+
+## FAQ
+
+Should there be frequently asked questions then they will appear here.
+
 ## Other elements in DNB Org for GoHugo
 
 Elements are GoHugo tools that enhance and simplify your daily work with [GoHugo, the world's fastest framework for building websites](https://gohugo.io/). Included are:
