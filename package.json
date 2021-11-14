@@ -23,10 +23,9 @@
   },
   "scripts": {
     "clean": "run-p clean:**",
-    "clean:hugo": "rimraf node_modules resources package-lock.json public",
-    "release": "npm run release:patch",
-    "release:patch": "standard-version --release-as patch -a -t \"v\" && git push --follow-tags origin main",
-    "release:major": "standard-version --release-as major -a -t \"v\" && git push --follow-tags origin main",
+    "clean:node": "rimraf node_modules package-lock.json",
+    "clean:hugo": "rimraf public resources .hugo_build.lock",
+    "release": "standard-version --release-as patch -a -t \"v\" && git push --follow-tags origin main",
     "release:minor": "standard-version --release-as minor -a -t \"v\" && git push --follow-tags origin main"
   },
   "private": true
