@@ -1,0 +1,8 @@
+# disabling unused features
+disableKinds = [
+  "taxonomy",
+  "taxonomyTerm",
+  "RSS",
+  "sitemap",
+  "robotsTXT"
+]

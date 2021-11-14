@@ -30,6 +30,7 @@ hugo mod get -u ./...
 
 # starting hugo server
 hugo server \
+    --source dev \
     --gc \
     --environment development \
     --disableFastRender \
