@@ -30,5 +30,5 @@ else type is checked against type
 {{- end -}}
 {{ if not $printed }}
   {{- partial "debug.html" (dict "message" (printf "The type '%s' is unknown to gohugo-debug." $type) "severity" "debug") -}}
-  {{- partial "debugging-formatters/default.html" (dict "value" $value "config" $item) -}}
+  {{- partial "debugging-formatters/default.html" (dict "value" $value) -}}
 {{ end }}
