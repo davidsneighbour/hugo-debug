@@ -22,7 +22,8 @@
     "@dnb-org/standard-version-config": "3.3.7",
     "@dnb-org/tools": "3.3.7",
     "bootstrap": "^5.1.3",
-    "cypress": "^9.0.0"
+    "cypress": "^9.0.0",
+    "eslint-plugin-cypress": "^2.12.1"
   },
   "scripts": {
     "clean": "run-p clean:**",
