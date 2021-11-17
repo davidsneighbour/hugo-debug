@@ -1,5 +1,6 @@
 {
   "extends": "@dnb-org/cypress-config/base.json",
   "pluginsFile": "tests/cypress/plugins/index.js",
-  "env": {}
+  "env": {},
+  "$schema": "https://on.cypress.io/cypress.schema.json"
 }
