@@ -35,7 +35,8 @@
     "serve:hugo": "bin/dnb-hugo-dev-server.sh",
     "server": "npm run serve",
     "test": "run-p test:server test:cypress",
-    "test:cypress": "cypress open",
+    "test:cypress": "cypress run",
+    "test:cypress:ide": "cypress open",
     "test:server": "./bin/dnb-hugo-test-server.sh"
   },
   "private": true
