@@ -6,12 +6,28 @@
 
 {{- /*
 range through configured formatters and print if it matches
-if `catch` is configured it will be used to try to match the type against
+if `internal` is set check for slices and maps
+elseif `catch` is configured it will be used to try to match the type against
 else type is checked against type
 */ -}}
 {{- range $index, $item := $config.formatters -}}
   {{- $print := false -}}
   {{ if not $printed }}
+
+    {{ with $item.internal }}
+      {{ if eq . "map" }}
+        {{ if reflect.IsMap . }}
+          {{ $print = true}}
+        {{ end }}
+      {{ end }}
+      {{ if eq . "slice" }}
+        {{ if reflect.IsSlice . }}
+          {{ $print = true}}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    {{ if not $print }}
+
     {{- with $item.catch }}
       {{ if (findRE $item.catch $type) -}}
         {{- $print = true -}}
@@ -20,6 +36,7 @@ else type is checked against type
       {{ if eq $type .type -}}
         {{- $print = true -}}
       {{- end -}}
+    {{ end }}
     {{ end }}
     {{- if $print -}}
       {{- $formatterPath := printf "debugging-formatters/%s.html" .slug -}}
