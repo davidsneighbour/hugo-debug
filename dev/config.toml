@@ -1,4 +1,4 @@
-baseURL = "https://dnb-org.github.io/debug/
+baseURL = "https://dnb-org.github.io/debug/"
 
 # disabling unused features
 disableKinds = [
