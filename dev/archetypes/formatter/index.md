@@ -6,7 +6,7 @@ date = {{ .Date }}
 publishDate = {{ .Date }}
 lastmod = {{ .Date }}
 
-slug = "slugname"
+slug = "slug name"
 
 [version]
 since = "1.5.0"
