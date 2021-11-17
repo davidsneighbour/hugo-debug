@@ -6,3 +6,11 @@ disableKinds = [
   "sitemap",
   "robotsTXT"
 ]
+
+
+
+[[module.imports]]
+path = "github.com/dnb-org/debug"
+
+[[module.imports]]
+path = "github.com/dnb-org/hooks"

@@ -10,7 +10,7 @@
     <div class="col-md-8 py-5 px-3 mx-auto">
 
       <header class="pb-3 mb-5 border-bottom">
-        <h1 class="h4">
+        <h1>
           <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
             <span>{{ .Title }}</span>
           </a>
@@ -18,6 +18,13 @@
       </header>
 
       {{ .Content }}
+
+      <h2>Layout Debug Tests</h2>
+
+      <div id="debug-page-context">
+        <h3>Page Context</h3>
+        {{ partial "debugprint.html" . }}
+      </div>
 
     </div>
 
