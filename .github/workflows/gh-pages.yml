@@ -16,6 +16,12 @@ jobs:
           submodules: false
           fetch-depth: 0
 
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          cache: 'npm'
+      - run: npm install
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
