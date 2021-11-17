@@ -10,7 +10,8 @@ if `internal` is set check for slices and maps
 elseif `catch` is configured it will be used to try to match the type against
 else type is checked against type
 */ -}}
-{{- range $index, $item := $config.formatters -}}
+{{- range $index, $item := sort $config.formatters "weight" "asc" -}}
+
   {{- $print := false -}}
   {{ if not $printed }}
 

@@ -79,6 +79,7 @@ internal = "map"
 slug = "map"
 label = "Map"
 description = ""
+weight = 100
 
 [[dnb.debug.formatters]]
 type = "*hugolib.ShortcodeWithPage"
