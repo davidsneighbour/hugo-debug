@@ -191,16 +191,18 @@ DNB Org uses Codacy to keep some modest code quality. Keep an eye on your pull r
 
 Should there be frequently asked questions then they will appear here.
 
+<!--- ELEMENTS BEGIN --->
 ## Other elements in DNB Org for GoHugo
 
-Elements are GoHugo tools that enhance and simplify your daily work with [GoHugo, the world's fastest framework for building websites](https://gohugo.io/). Included are:
+[Hugo elements by David's Neighbour](https://github.com/dnb-org) are modules that enhance and simplify your daily work with [Hugo, the world's fastest framework for building websites](https://gohugo.io/). Included are:
 
 | Element | Description |
 | :--- | :--- |
-| [blocks](https://github.com/dnb-org/blocks) | Blocks are reusable page elements like headers, footers, content display etc.|
 | [components](https://github.com/dnb-org/components) | Components are preconfigured features like automatic search index creation, sitemap and robots.txt creation, etc. |
-| [debug](https://github.com/dnb-org/debug) | GoHugo's missing debugging partial. |
-| [hooks](https://github.com/dnb-org/hooks) | Template hooks for GoHugo. |
-| [libraries](https://github.com/dnb-org/libraries) | Libraries are a collection of often used external packages, conveniently configured as modules for GoHugo. |
+| [configurations](https://github.com/dnb-org/configurations) | A collection of configuration packages used in dnb-org |
+| [debug](https://github.com/dnb-org/debug) | Debugging for your Hugo layout files. |
+| [hooks](https://github.com/dnb-org/hooks) | Template hooks for Hugo themes |
+| [libraries](https://github.com/dnb-org/libraries) | Libraries are a collection of often used external packages, conveniently configured as modules for Hugo. |
 | [shortcodes](https://github.com/dnb-org/shortcodes) | Shortcodes are content particles that helpfully solve repeated tasks, like presentation, galleries and so on. |
 | [testcontent](https://github.com/dnb-org/testcontent) | Testcontent is a collection of testing content. Obviously. |
+<!--- ELEMENTS END --->
