@@ -42,5 +42,8 @@
     "test:cypress:ide": "cypress open",
     "test:server": "./bin/dnb-hugo-test-server.sh"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "mem": "^9.0.1"
+  }
 }
