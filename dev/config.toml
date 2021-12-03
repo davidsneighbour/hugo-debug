@@ -6,11 +6,11 @@ disableKinds = [
   "taxonomyTerm",
   "RSS",
   "sitemap",
-  "robotsTXT"
+  "robotsTXT",
 ]
 
 [[module.imports]]
-path = "github.com/dnb-org/debug"
+path = "github.com/dnb-org/dnb-hugo-debug"
 
 [[module.imports]]
 path = "github.com/dnb-org/hooks"

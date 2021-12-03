@@ -1,6 +1,6 @@
 # _GoHugo Debug_ - debug everything
 
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/6f080031f82149f0a2f8e7ebdccfcc9f)](https://www.codacy.com/gh/dnb-org/debug/dashboard)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/6f080031f82149f0a2f8e7ebdccfcc9f)](https://www.codacy.com/gh/dnb-org/dnb-hugo-debug/dashboard)
 
 This module for GoHugo adds debugging partials for many use cases.
 
@@ -16,7 +16,7 @@ Add the following code to your configuration:
 ```toml
 [module]
 [[module.imports]]
-path = "github.com/dnb-org/debug"
+path = "github.com/dnb-org/dnb-hugo-debug"
 disabled = false
 ```
 
@@ -81,7 +81,7 @@ To debug page data from within a Markdown file:
 {{< debugprint param="bla" >}} <!-- debugs .Params.bla -->
 ```
 
-Debugging from within Markdown requires very explicit configuration in the shortcode template. [Open a new issue](https://github.com/dnb-org/debug/issues/new) if you require a specific debugging subject.
+Debugging from within Markdown requires very explicit configuration in the shortcode template. [Open a new issue](https://github.com/dnb-org/dnb-hugo-debug/issues/new) if you require a specific debugging subject.
 
 ### Debug from your layout file into the CLI/server log
 

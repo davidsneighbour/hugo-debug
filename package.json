@@ -1,5 +1,5 @@
 {
-  "name": "@dnb-org/debug",
+  "name": "dnb-hugo-debug",
   "version": "1.4.2",
   "license": "GPL-3.0-only",
   "description": "GoHugo's missing debugging partials.",
@@ -12,10 +12,10 @@
     "email": "patrick@davids-neighbour.com",
     "web": "https://davids-neighbour.com"
   },
-  "homepage": "https://github.com/dnb-org/debug#readme",
-  "repository": "dnb-org/debug",
+  "homepage": "https://github.com/dnb-org/dnb-hugo-debug#readme",
+  "repository": "dnb-org/dnb-hugo-debug",
   "bugs": {
-    "url": "https://github.com/dnb-org/debug/issues"
+    "url": "https://github.com/dnb-org/dnb-hugo-debug/issues"
   },
   "devDependencies": {
     "@dnb-org/cypress-config": "^3.4.2",
