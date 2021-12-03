@@ -18,7 +18,7 @@
     "url": "https://github.com/dnb-org/debug/issues"
   },
   "devDependencies": {
-    "@dnb-org/cypress-config": "^3.4.2",
+    "@dnb-org/cypress-config": "^3.4.3",
     "@dnb-org/standard-version-config": "3.4.0",
     "@dnb-org/tools": "3.4.0",
     "bootstrap": "^5.1.3",
