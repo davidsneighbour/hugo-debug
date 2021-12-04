@@ -2,6 +2,70 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.3](https://github.com/dnb-org/dnb-hugo-debug/compare/v1.4.2...v1.4.3) (2021-12-04)
+
+
+### Features
+
+* **formatters:** add formatters feature and formatters for int, pager, position (WIP) ([73a1dc9](https://github.com/dnb-org/dnb-hugo-debug/commit/73a1dc98f1a1c9119ab0c22efb2ab93404270eb3)), closes [#73](https://github.com/dnb-org/dnb-hugo-debug/issues/73)
+* **formatters:** add formatters for all existing debugging types ([71118a1](https://github.com/dnb-org/dnb-hugo-debug/commit/71118a19d3c4935601985d18882853bbc7d6db03))
+* **formatters:** add weight parameter for formatters ([40e3230](https://github.com/dnb-org/dnb-hugo-debug/commit/40e3230638b4de2216697a2017b3a710892916e4))
+* **formatters:** fix default formatter ([96f20e3](https://github.com/dnb-org/dnb-hugo-debug/commit/96f20e3fc2b2cf3fa934e51cfdec16a413e493d6))
+* **formatters:** fix orderedtaxonomyentry and resource formatter ([01fff37](https://github.com/dnb-org/dnb-hugo-debug/commit/01fff374e1b51f53c5e41e883fc630bdad20632b))
+* **formatters:** use internal reflect functions to eval maps and slices ([fffaf0f](https://github.com/dnb-org/dnb-hugo-debug/commit/fffaf0fe820f8444caf1e9179df7d2e3a25b9b7f))
+* **layouts:** adding eval layout (WIP) ([f4789cd](https://github.com/dnb-org/dnb-hugo-debug/commit/f4789cd59afe5c6a259fc79f8fbc5114bd5fefa5))
+
+
+### Bug Fixes
+
+* disable final printing attempt if formatter ran before ([d97d48e](https://github.com/dnb-org/dnb-hugo-debug/commit/d97d48e9b8a85db53413380d86b7a05150b32aa5)), closes [#73](https://github.com/dnb-org/dnb-hugo-debug/issues/73)
+* naming errors in map partial ([4e1ee38](https://github.com/dnb-org/dnb-hugo-debug/commit/4e1ee386b119e1da20db02169bd89b76fe7bdcdf))
+* not evaluating single booleans for being booleans ([fd2ae6a](https://github.com/dnb-org/dnb-hugo-debug/commit/fd2ae6a76321804eb611742abb4ad401ee596ce4))
+* **typo:** formatters archetype ([550f30e](https://github.com/dnb-org/dnb-hugo-debug/commit/550f30e09e37b1bbd5ddd1cc9557e32ff66b40ea))
+* wrong context in page formatter ([9b49ab2](https://github.com/dnb-org/dnb-hugo-debug/commit/9b49ab25289b900fdeb6b1094d315ef57cb3b966))
+
+
+### Documentation
+
+* add bootstrap pipe and developer font to dev site ([1b8d3e8](https://github.com/dnb-org/dnb-hugo-debug/commit/1b8d3e859b585c9a7b243788270e16b7a56ca12a))
+* add codacy note to contribution section ([38cb7f4](https://github.com/dnb-org/dnb-hugo-debug/commit/38cb7f49914194b6c47bf74f5203f10cbbec494f))
+* update README.md with contribution info, typos and docs ([a1a7f7f](https://github.com/dnb-org/dnb-hugo-debug/commit/a1a7f7fe0c92018725280e65fc2445f318d22f9e))
+
+
+### Build System
+
+* add replacements to pre release script ([79a77c8](https://github.com/dnb-org/dnb-hugo-debug/commit/79a77c8a05aa610f3adb10290089a00ce8d9f929))
+* **docs:** add readme creation script ([0d0cb45](https://github.com/dnb-org/dnb-hugo-debug/commit/0d0cb45e15a52937c7742498f5302793c9f41f16))
+
+
+### Chore
+
+* add development and testing server setup ([6d2747d](https://github.com/dnb-org/dnb-hugo-debug/commit/6d2747d136a02218adb85d28283e6b72c2680ac6))
+* **build:** add linting and server scripts ([82e026e](https://github.com/dnb-org/dnb-hugo-debug/commit/82e026ecb7afb173619a016977a7704238147257))
+* **config:** add archetype for formatters ([aa80a56](https://github.com/dnb-org/dnb-hugo-debug/commit/aa80a563b247a527481b200a6ac59f0e00aec8f5))
+* **config:** add eslint configuration for cypress ([39f9a95](https://github.com/dnb-org/dnb-hugo-debug/commit/39f9a95c4b3b30357e5fa0dce44050f452268d1c))
+* **config:** add module cache to git pages workflow ([1d7ec96](https://github.com/dnb-org/dnb-hugo-debug/commit/1d7ec963a61d9532bcd9a31df5d5a2ffb1c6149f))
+* **config:** add npm install to dev site workflow ([513fd75](https://github.com/dnb-org/dnb-hugo-debug/commit/513fd751f7e80b894b1fc1b40f2ceaca83a57af4))
+* **config:** add package-lock.json to repo ([e3f6ee0](https://github.com/dnb-org/dnb-hugo-debug/commit/e3f6ee00183ee7a8531ab0299fb223ad97811345))
+* **config:** add sample file for .env configuration ([3d6ba1b](https://github.com/dnb-org/dnb-hugo-debug/commit/3d6ba1b8cda93075722710c678f2e9f2f0f515aa))
+* **config:** add scratch directory to gitignore ([1889308](https://github.com/dnb-org/dnb-hugo-debug/commit/1889308b5abe635a470f909ebe4d6d9c974d20b5))
+* **config:** add vscode configuration ([cace462](https://github.com/dnb-org/dnb-hugo-debug/commit/cace462ceac51e3b71d2f115b4d4fc224443f878))
+* **config:** configure standard-version to save version number in data folder ([58aec71](https://github.com/dnb-org/dnb-hugo-debug/commit/58aec716bb773b4931f7ea7ad3c4016a8de61a4d))
+* **config:** enable manually triggered workflow run ([af86266](https://github.com/dnb-org/dnb-hugo-debug/commit/af862664b46aca7b493db2a13ab45c5a60eabb47))
+* **config:** fix build command for git pages workflow ([d708a47](https://github.com/dnb-org/dnb-hugo-debug/commit/d708a47d87691e6c38a8e8e53e5deb8b8043a15a))
+* **config:** fix typo in dev site config ([9ed0f80](https://github.com/dnb-org/dnb-hugo-debug/commit/9ed0f80ba77cc4f35352b54550aa1fd8e21b2a76))
+* **config:** move .hugo_build.lock into gitignore ([77b2bb6](https://github.com/dnb-org/dnb-hugo-debug/commit/77b2bb6d5e36bf62fb0013cff0d57eee212e5769))
+* **config:** put proper directories and files into clean:hugo script ([10fa25b](https://github.com/dnb-org/dnb-hugo-debug/commit/10fa25bb14bada606b0060f516e9ad43e5ef6d72))
+* **config:** reconfigure dependabot ([bba4939](https://github.com/dnb-org/dnb-hugo-debug/commit/bba4939f94001940351803690094c5e8efef6ff4))
+* **config:** setup github pages for dev site ([84e9ec0](https://github.com/dnb-org/dnb-hugo-debug/commit/84e9ec02e56130487de99624b7bdff3e365b5953))
+* **config:** update npm scripts ([20b3fda](https://github.com/dnb-org/dnb-hugo-debug/commit/20b3fdaedc9b6572094f0dca625a20b5fc734eb2))
+* **deps:** add mem to solve security warnings ([743b35e](https://github.com/dnb-org/dnb-hugo-debug/commit/743b35e4de164d2ff3e3240ecddd2980fd61db80))
+* **deps:** update dependencies ([d184183](https://github.com/dnb-org/dnb-hugo-debug/commit/d184183b977301e00d1e925f4f4e2694089b93e2))
+* **deps:** update dependencies ([a884aeb](https://github.com/dnb-org/dnb-hugo-debug/commit/a884aeb2d00cf036645a22be621c5c977646e5b5))
+* **fix:** add public dev directory to gitignore ([25fd1f5](https://github.com/dnb-org/dnb-hugo-debug/commit/25fd1f55e54cf4e9d7cb104c05f3aa380e89b84e))
+* **fix:** add updated build file to release script ([404c5a5](https://github.com/dnb-org/dnb-hugo-debug/commit/404c5a5f8edef181c0d0e8cc6a9996c226a0ccef))
+* re-setup to new repo name ([0b3faf1](https://github.com/dnb-org/dnb-hugo-debug/commit/0b3faf1ac2fbdc5a812a5a818d6e57abbc05f9bd))
+
 ### [1.4.2](https://github.com/dnb-org/debug/compare/v1.4.1...v1.4.2) (2021-11-11)
 
 
