@@ -1,3 +1,5 @@
+![repoimage](https://repository-images.githubusercontent.com/320286496/30a32d02-69e6-463a-a979-75430bf2883e)
+
 # _GoHugo Debug_ - debug everything
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/6f080031f82149f0a2f8e7ebdccfcc9f)](https://www.codacy.com/gh/dnb-org/dnb-hugo-debug/dashboard)
