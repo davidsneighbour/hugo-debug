@@ -5,7 +5,7 @@
 {{/*{{- end -}}*/}}
 
 {{- if eq ($config.disablenote | default false) false -}}
-  {{- warnf "[%s/debug-0] Additional logging by dnb-org (see %s)" $config.namespace $config.loglink -}}
+  {{- warnf "[%s/debug-0] additional logging by dnb-org (see %s)" $config.namespace $config.loglink -}}
 {{- end -}}
 {{- $namespace := $config.namespace | default "dnb" -}}
 {{- $severity := .severity | default "info" -}}
