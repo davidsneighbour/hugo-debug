@@ -1,4 +1,4 @@
-name: Create Github Dev Pages
+name: Create DevSite
 
 on:
   push:
@@ -22,7 +22,7 @@ jobs:
           cache: 'npm'
       - run: npm install
 
-      - name: Setup Hugo
+      - name: Setup GoHugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
@@ -35,10 +35,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-hugomod-
 
-      - name: Build
+      - name: Build site
         run: hugo --minify --source dev
 
-      - name: Deploy
+      - name: Deploy site
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
         with:
