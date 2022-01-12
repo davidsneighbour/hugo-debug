@@ -111,7 +111,7 @@ Some times we developers want to inform and warn our users, or even throw an err
 The dictionary options are as follows:
 
 - **message:** The message to print. It will be prefixed with the datetime and the severity slug.
-- **context:** The context to debug to, typically the dot. There is currently nothing else than the dot expected, we have explicit debugging on the todo list where the context can be something to debug to the CLI.
+- **context:** The context to debug, typically the dot. There is currently nothing else than the dot expected, we have explicit debugging on the todo list where the context can be something to debug to the CLI.
 - **severity:** Slug marking the severity level. one of debug, info (default), warn, error or fatal.
 - **level:** 1 to 10 for the severity level. Can be used to have a more fine grained control over severity levels.
 - **slug:** (not implemented, keep an eye on #71) an ID to use so users can silence errors (level 7 and up)
@@ -119,25 +119,29 @@ The dictionary options are as follows:
 
 The resulting error message will look like this:
 
-`[namespaceslug/severity-level] message`
+`SEVERITY TIMESTAMP [namespaceslug/severity-level] message`
 
-*Note:* GoHugo's error printing is weird, to put it friendly. All messages that occure more than once will printed only once. This applies to identical error messages. To work around this (if you wish to for instance notify the user about multiple image transformations not working) you will need to add an identifier (the image url? the resource id?) to the debugging message.
+*Note:* GoHugo will print all messages that occure more than once will printed only once. This applies to identical error messages. To work around this (if you wish to for instance notify the user about multiple image transformations not working) you should add an identifier (the image url? the resource id?) to the debugging message.
 
-### (BETA) Debug page information in a comprehensive format
+*Note2:* Hugo makes only ERROR and WARN levels available, so all `SEVERITY` stamps in the beginning of each log line will be either a red ERROR (from errors and fatals --- 1 to 4) or a yellow WARN for all others (debug to warn --- 5 to 10).
 
-While all other debugging options above are flexible options to debug any value our `debugpage` partial opts to show a bunch of interesting information about the page it is called on. It's quite specific and tries to cut out the noise. This is work in progress and might change without notice in subsequent releases.
+### Debug pages in a comprehensive format
 
-You can try it by adding the following partial to a layout file:
+While all other debugging options above are flexible options to debug any value, the `debugpage` partial opts to show a bunch of interesting information about the page object it is called on. It's quite specific and tries to cut out the noise.
+
+You can add the following call to any layout file:
 
 ```go-template
 {{ partialCached "debugpage.html" . . }}
 ```
 
-or by using the following shortcode in your content file:
+or by using the following shortcode in your Markdown:
 
 ```markdown
 {{< debugpage >}}
 ```
+
+The Markdown shortcode will take the context of the currently parsed page while the template call will take what you hand over.
 
 ## Configuration
 
