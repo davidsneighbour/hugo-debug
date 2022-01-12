@@ -1,6 +1,6 @@
 [hugoVersion]
 extended = false
-min = "0.56.0"
+min = "0.92.0"
 
 [[mounts]]
 source = "assets/scss/_debugprint.scss"
