@@ -1,7 +1,6 @@
-<table class="debugprint">
-  <tr>
-    <td>
-      {{ printf "%s" .value | safeHTML }}
-    </td>
-  </tr>
-</table>
+{{/* {{ printf "%s" .value | safeHTML }} */}}
+{{ if (ne "0001-01-01" (.value.Format "2006-01-02")) }}
+  {{ .value }}
+{{ else }}
+  no date set
+{{ end }}
