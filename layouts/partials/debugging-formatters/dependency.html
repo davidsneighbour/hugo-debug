@@ -1,16 +1,48 @@
-<!-- https://github.com/gohugoio/hugo/blob/master/common/hugo/hugo.go#L170 -->
-{{ $DependencyVarNames   := (slice "Path" "Version" "Vendor" "Time" "Owner" "Replace") }}
-{{ $DependencyVarSymbols := (slice .value.Path .value.Version .value.Vendor .value.Time .value.Owner .value.Replace ) }}
+{{- /* https://github.com/gohugoio/hugo/blob/master/common/hugo/hugo.go#L170 */ -}}
+{{- $structure := slice
+      (dict
+        "slug" "Path"
+        "value" .value.Path
+        "type" "string")
+      (dict
+        "slug" "Version"
+        "value" .value.Version
+        "type" "string")
+      (dict
+        "slug" "Vendor"
+        "value" .value.Vendor
+        "type" "bool")
+      (dict
+        "slug" "Time"
+        "value" .value.Time
+        "type" "time")
+      (dict
+        "slug" "Owner"
+        "value" .value.Owner
+        "type" "dependency")
+      (dict
+        "slug" "Replace"
+        "value" .value.Replace
+        "type" "dependency")
+-}}
+
 <table class="debugprint">
   <tr>
-      <th class="align-top" class="key">Dependency Variable</th>
+      <th class="align-top" class="key"><span class="font-weight-normal text-uppercase">Dependency</span></th>
+      <th class="align-top" class="type">Type</th>
       <th class="align-top" class="value">Value</th>
   </tr>
-  {{ range $idx, $elem := $DependencyVarNames }}
-    {{ printf "<tr><td class='align-top' class='key'>%s</td><td class='align-top' class='value'>" $elem | safeHTML }}
-    {{ with (index $DependencyVarSymbols $idx) }}
-    {{ partial "debugprint.html" . }}
-    {{ end }}
-    {{ printf "</td></tr>" | safeHTML }}
-  {{ end }}
+  {{- range $structure -}}
+    <tr>
+      <th>{{ .slug }}</th>
+      <td>{{ .type }}</td>
+      <td>
+      {{- with .value -}}
+        {{- partial "debugprint.html" . -}}
+      {{- else -}}
+        {{- partial "debugging-partials/nil.html" . -}}
+      {{- end -}}
+      </td>
+    </tr>
+  {{- end -}}
 </table>
