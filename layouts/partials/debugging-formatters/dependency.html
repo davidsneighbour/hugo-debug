@@ -1,0 +1,16 @@
+<!-- https://github.com/gohugoio/hugo/blob/master/common/hugo/hugo.go#L170 -->
+{{ $DependencyVarNames   := (slice "Path" "Version" "Vendor" "Time" "Owner" "Replace") }}
+{{ $DependencyVarSymbols := (slice .value.Path .value.Version .value.Vendor .value.Time .value.Owner .value.Replace ) }}
+<table class="debugprint">
+  <tr>
+      <th class="align-top" class="key">Dependency Variable</th>
+      <th class="align-top" class="value">Value</th>
+  </tr>
+  {{ range $idx, $elem := $DependencyVarNames }}
+    {{ printf "<tr><td class='align-top' class='key'>%s</td><td class='align-top' class='value'>" $elem | safeHTML }}
+    {{ with (index $DependencyVarSymbols $idx) }}
+    {{ partial "debugprint.html" . }}
+    {{ end }}
+    {{ printf "</td></tr>" | safeHTML }}
+  {{ end }}
+</table>

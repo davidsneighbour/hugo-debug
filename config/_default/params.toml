@@ -7,9 +7,7 @@ debuglevel = 8
 development = true
 
 [dnb.debug.plugins]
-scss = [
-  "scss/_debugprint.scss"
-]
+scss = ["scss/_debugprint.scss"]
 
 # formatters setup
 # TODO this will move into the data directory as soon as some issues
@@ -41,6 +39,13 @@ catch = "^(string|template\\.(CSS|HTML|HTMLAttr|JS|JSStr|URL))$"
 class = "flat"
 slug = "string"
 label = "String"
+description = ""
+
+[[dnb.debug.formatters]]
+type = "*hugo.Dependency"
+class = "struct"
+slug = "dependency"
+label = "Dependency"
 description = ""
 
 [[dnb.debug.formatters]]
