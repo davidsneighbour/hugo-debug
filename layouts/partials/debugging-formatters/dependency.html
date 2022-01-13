@@ -1,4 +1,5 @@
 {{- /* https://github.com/gohugoio/hugo/blob/master/common/hugo/hugo.go#L170 */ -}}
+{{- $config := .config -}}
 {{- $structure := slice
       (dict
         "slug" "Path"
@@ -26,23 +27,9 @@
         "type" "dependency")
 -}}
 
-<table class="debugprint">
-  <tr>
-      <th class="align-top" class="key"><span class="font-weight-normal text-uppercase">Dependency</span></th>
-      <th class="align-top" class="type">Type</th>
-      <th class="align-top" class="value">Value</th>
-  </tr>
-  {{- range $structure -}}
-    <tr>
-      <th>{{ .slug }}</th>
-      <td>{{ .type }}</td>
-      <td>
-      {{- with .value -}}
-        {{- partial "debugprint.html" . -}}
-      {{- else -}}
-        {{- partial "debugging-partials/nil.html" . -}}
-      {{- end -}}
-      </td>
-    </tr>
-  {{- end -}}
-</table>
+{{- $data := dict
+      "structure" $structure
+      "config" $config
+-}}
+
+{{- partial "debugging-partials/print-table.html" $data -}}

@@ -46,7 +46,7 @@ type = "*hugo.Dependency"
 class = "struct"
 slug = "dependency"
 label = "Dependency"
-description = ""
+description = "A structure containing information about a dependency of the current project."
 
 [[dnb.debug.formatters]]
 type = "*page.Pager"
