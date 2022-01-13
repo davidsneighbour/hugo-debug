@@ -6,6 +6,10 @@ namespace = "dnb"
 debuglevel = 8
 development = true
 
+[dnb.debug.formats]
+datetime = ""
+datetime_extended = ""
+
 [dnb.debug.plugins]
 scss = ["scss/_debugprint.scss"]
 
@@ -19,20 +23,26 @@ slug = "bool"
 label = "Boolean"
 description = ""
 
-# todo distinct between integers and floats
-[[dnb.debug.formatters]]
-catch = "^(int64|float64)$"
-class = "flat"
-slug = "number"
-label = "Number"
-description = ""
-
 [[dnb.debug.formatters]]
 type = "int"
 class = "flat"
 slug = "int"
 label = "Integer"
 description = "a positive or negative number without a floating point"
+
+[[dnb.debug.formatters]]
+type = "int64"
+class = "flat"
+slug = "int64"
+label = "Integer"
+description = "a positive or negative number without a floating point"
+
+[[dnb.debug.formatters]]
+type = "float64"
+class = "flat"
+slug = "float"
+label = "Integer"
+description = "A positive or negative number with a floating point"
 
 [[dnb.debug.formatters]]
 catch = "^(string|template\\.(CSS|HTML|HTMLAttr|JS|JSStr|URL))$"
