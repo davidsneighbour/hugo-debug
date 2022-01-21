@@ -18,7 +18,7 @@
     "url": "https://github.com/dnb-org/dnb-hugo-debug/issues"
   },
   "devDependencies": {
-    "@dnb-org/cypress-config": "^3.4.10",
+    "@dnb-org/cypress-config": "^3.4.12",
     "@dnb-org/standard-version-config": "3.4.7",
     "@dnb-org/tools": "3.4.9",
     "bootstrap": "^5.1.3",
