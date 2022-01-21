@@ -44,6 +44,6 @@
   },
   "private": true,
   "dependencies": {
-    "mem": "^9.0.1"
+    "mem": "^9.0.2"
   }
 }
