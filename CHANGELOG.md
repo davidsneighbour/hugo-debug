@@ -2,6 +2,48 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.4](https://github.com/dnb-org/dnb-hugo-debug/compare/v1.4.3...v1.4.4) (2022-01-22)
+
+
+### Features
+
+* add formatting partial for empty values ([cd16107](https://github.com/dnb-org/dnb-hugo-debug/commit/cd1610770dd0ff5b128993e510f7e654f06eedc5))
+* add separate debugging formatters for int/int64/float64 ([27278ee](https://github.com/dnb-org/dnb-hugo-debug/commit/27278eeb64327b984853db1432f6f58b31d5cf34)), closes [#76](https://github.com/dnb-org/dnb-hugo-debug/issues/76)
+* **deprecation:** Page.Hugo is deprecated, removed in debugpage.html ([85e70ba](https://github.com/dnb-org/dnb-hugo-debug/commit/85e70bae377a6b2e3911537aad7a3a3a1ac34326))
+* **fix:** remove quotation marks from string debugging ([14ff521](https://github.com/dnb-org/dnb-hugo-debug/commit/14ff5216f0291570f565f0afadba1b342bbf5fe3))
+* **fix:** remove table from time formatter ([6376297](https://github.com/dnb-org/dnb-hugo-debug/commit/6376297da8c77a7406f5e25cb2430a9da8041289))
+* **fix:** rework debugging table for dependency type ([f8e2cc0](https://github.com/dnb-org/dnb-hugo-debug/commit/f8e2cc056ece323bfd57a9bbdbef030bd72d3ace))
+
+
+### Bug Fixes
+
+* optimise table layout for dependency type ([3e0f02f](https://github.com/dnb-org/dnb-hugo-debug/commit/3e0f02f043c0c6a95bc32ed49e274f29e5d5462e))
+
+
+### Build System
+
+* **lint:** remove CHANGELOG.md from markdown linting ([95068c7](https://github.com/dnb-org/dnb-hugo-debug/commit/95068c78d72dcfc1995fdf202234226855d967e0))
+
+
+### Documentation
+
+* add repo image to README.md ([50cc714](https://github.com/dnb-org/dnb-hugo-debug/commit/50cc7143bccc70a9a92bd2812c6e1498ea4623fc))
+* rewrite README.md ([e757ffe](https://github.com/dnb-org/dnb-hugo-debug/commit/e757ffe04d08c3f31cffd00f3090e33201a25769))
+
+
+### Chore
+
+* cleanup bin layout and fix paths in package.json ([cf2ecbc](https://github.com/dnb-org/dnb-hugo-debug/commit/cf2ecbcd760b514689f14b8d25abad1ea80d0cd9))
+* **config:** cleanup and fixes to dev site ([8af6c02](https://github.com/dnb-org/dnb-hugo-debug/commit/8af6c020c524aea3b7b3d8b97d1501b780e9e710))
+* **config:** require 0.92.0 for dependency graph debugging ([3709884](https://github.com/dnb-org/dnb-hugo-debug/commit/3709884317537a6fca244816570257a9a3607efd))
+* **config:** update header images ([695fc9d](https://github.com/dnb-org/dnb-hugo-debug/commit/695fc9d4f2c60ff14f4a0d15c8574dfabde30334))
+* **config:** update module configuration ([df9bf65](https://github.com/dnb-org/dnb-hugo-debug/commit/df9bf65dbd6e6626344c3cdc084032dc375ca650))
+* **deps:** update dependencies ([2917dfa](https://github.com/dnb-org/dnb-hugo-debug/commit/2917dfac888e51ebe04cb4a8021e2194cd718ab6))
+* fix typo ([650a1d1](https://github.com/dnb-org/dnb-hugo-debug/commit/650a1d1e89d2f6a264a420b334a62a4a417170b2))
+* remove vscode configuration ([342a4d7](https://github.com/dnb-org/dnb-hugo-debug/commit/342a4d795c5ae1d59e30eef2bfc9bff2e24c35f4))
+* update go version ([6b99970](https://github.com/dnb-org/dnb-hugo-debug/commit/6b99970f7b211ba2ceeb3cae5d8e8ae5bd56b892))
+* update repository files ([6911704](https://github.com/dnb-org/dnb-hugo-debug/commit/69117044d9e47747cb80d176aea41c91524f7638))
+
 ### [1.4.3](https://github.com/dnb-org/dnb-hugo-debug/compare/v1.4.2...v1.4.3) (2021-12-04)
 
 
