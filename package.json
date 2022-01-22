@@ -1,6 +1,6 @@
 {
   "name": "dnb-hugo-debug",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "license": "GPL-3.0-only",
   "description": "GoHugo's missing debugging partials.",
   "author": {
@@ -16,6 +16,9 @@
   "repository": "dnb-org/dnb-hugo-debug",
   "bugs": {
     "url": "https://github.com/dnb-org/dnb-hugo-debug/issues"
+  },
+  "dependencies": {
+    "mem": "^9.0.2"
   },
   "devDependencies": {
     "@dnb-org/bootstrap-config": "^3.4.10",
@@ -34,13 +37,10 @@
     "serve:hugo": "bin/server/run",
     "server": "npm run serve",
     "test": "run-p test:server test:cypress",
-    "test:ide": "run-p test:server test:cypress:ide",
     "test:cypress": "cypress run",
     "test:cypress:ide": "cypress open",
+    "test:ide": "run-p test:server test:cypress:ide",
     "test:server": "./bin/dev/server"
   },
-  "private": true,
-  "dependencies": {
-    "mem": "^9.0.2"
-  }
+  "private": true
 }
