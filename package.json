@@ -28,16 +28,16 @@
     "clean:cypress": "rimraf tests/cypress/screenshots tests/cypress/videos",
     "clean:hugo": "rimraf dev/public dev/resources dev/.hugo_build.lock hugo.log",
     "clean:node": "rimraf node_modules package-lock.json",
-    "release": "standard-version --release-as patch -a -t \"v\" && git push --follow-tags origin main",
-    "release:minor": "standard-version --release-as minor -a -t \"v\" && git push --follow-tags origin main",
+    "release": "standard-version --release-as patch -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" && ./bin/hooks/postrelease",
+    "release:minor": "standard-version --release-as minor -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" && ./bin/hooks/postrelease",
     "serve": "run-p serve:hugo",
-    "serve:hugo": "bin/dnb-hugo-dev-server.sh",
+    "serve:hugo": "bin/server/run",
     "server": "npm run serve",
     "test": "run-p test:server test:cypress",
     "test:ide": "run-p test:server test:cypress:ide",
     "test:cypress": "cypress run",
     "test:cypress:ide": "cypress open",
-    "test:server": "./bin/dnb-hugo-test-server.sh"
+    "test:server": "./bin/dev/server"
   },
   "private": true,
   "dependencies": {
