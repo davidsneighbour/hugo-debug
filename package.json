@@ -24,7 +24,7 @@
     "@dnb-org/bootstrap-config": "^3.4.10",
     "@dnb-org/cypress-config": "^3.4.13",
     "@dnb-org/standard-version-config": "^3.4.10",
-    "@dnb-org/tools": "^3.4.12"
+    "@dnb-org/tools": "^3.5.0"
   },
   "scripts": {
     "clean": "run-p clean:**",
