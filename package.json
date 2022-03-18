@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@dnb-org/bootstrap-config": "^3.5.6",
-    "@dnb-org/cypress-config": "^3.5.6",
+    "@dnb-org/cypress-config": "^3.5.8",
     "@dnb-org/standard-version-config": "^3.5.6",
     "@dnb-org/tools": "^3.5.6"
   },
