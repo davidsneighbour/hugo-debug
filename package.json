@@ -12,10 +12,10 @@
     "email": "patrick@davids-neighbour.com",
     "web": "https://davids-neighbour.com"
   },
-  "homepage": "https://github.com/dnb-org/dnb-hugo-debug#readme",
-  "repository": "dnb-org/dnb-hugo-debug",
+  "homepage": "https://github.com/davidsneighbour/hugo-debug#readme",
+  "repository": "davidsneighbour/hugo-debug",
   "bugs": {
-    "url": "https://github.com/dnb-org/dnb-hugo-debug/issues"
+    "url": "https://github.com/davidsneighbour/hugo-debug/issues"
   },
   "dependencies": {
     "mem": "^9.0.2"
@@ -31,8 +31,8 @@
     "clean:cypress": "rimraf tests/cypress/screenshots tests/cypress/videos",
     "clean:hugo": "rimraf dev/public dev/resources dev/.hugo_build.lock hugo.log",
     "clean:node": "rimraf node_modules package-lock.json",
-    "release": "standard-version --release-as patch -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" && ./bin/hooks/postrelease",
-    "release:minor": "standard-version --release-as minor -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" && ./bin/hooks/postrelease",
+    "release": "standard-version --release-as patch -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" && ./bin/release/postrelease",
+    "release:minor": "standard-version --release-as minor -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" && ./bin/release/postrelease",
     "serve": "run-p serve:hugo",
     "serve:hugo": "bin/server/run",
     "server": "npm run serve",

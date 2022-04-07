@@ -4,7 +4,7 @@ baseURL = "https://dnb-org.github.io/debug/"
 disableKinds = ["taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT"]
 
 [[module.imports]]
-path = "github.com/dnb-org/dnb-hugo-debug"
+path = "github.com/davidsneighbour/hugo-debug"
 
 [[module.imports]]
-path = "github.com/dnb-org/dnb-hugo-hooks"
+path = "github.com/davidsneighbour/hugo-hooks"
