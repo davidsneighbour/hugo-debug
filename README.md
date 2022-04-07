@@ -33,19 +33,22 @@ The following documentation will refer to all configuration parameters in TOML f
 <!--- INSTALLUPDATE BEGIN --->
 ## Installing
 
-First enable modules in your own repository:
+First enable modules in your own repository if you did not already have done so:
 
 ```bash
 hugo mod init github.com/username/reponame
 ```
 
-Then add this module to your required modules in config.toml.
+Then add this module to your required modules in `config.toml`.
 
 ```toml
 [module]
 
 [[module.imports]]
 path = "github.com/davidsneighbour/hugo-debug"
+disable = false
+ignoreConfig = false
+ignoreImports = false
 
 ```
 
@@ -53,10 +56,12 @@ The next time you run `hugo` it will download the latest version of the module.
 
 ## Updating
 
-```shell
+```bash
 # update this module
 hugo mod get -u github.com/davidsneighbour/hugo-debug
-# update all modules
+# update to a specific version
+hugo mod get -u github.com/davidsneighbour/hugo-debug@v1.0.0
+# update all modules recursively over the whole project
 hugo mod get -u ./...
 ```
 <!--- INSTALLUPDATE END --->
@@ -251,7 +256,7 @@ Should there be frequently asked questions then they will appear here.
 | [dnb-hugo-functions](https://github.com/davidsneighbour/hugo-functions) | A Hugo theme component with helper functions for other projects. |
 | [dnb-hugo-giscus](https://github.com/davidsneighbour/hugo-giscus) | The Giscus comment system layout for GoHugo. |
 | [dnb-hugo-head](https://github.com/davidsneighbour/hugo-head) | A GoHugo theme component that solves the old question of "What tags belong into the `<head>` tag of my website?" |
-| [dnb-hugo-hooks](https://github.com/davidsneighbour/hugo-hooks) | GoHugo's missing hook system for template extensions. |
+| [dnb-hugo-hooks](https://github.com/davidsneighbour/hugo-hooks) | Hooks for GoHugo layouts. An easy way for theme developers to let users add to their themes.  |
 | [dnb-hugo-humans](https://github.com/davidsneighbour/hugo-humans) | Your site is made by humans. Humans.txt is naming them. |
 | [dnb-hugo-icons](https://github.com/davidsneighbour/hugo-icons) | Icons for your Hugo website. |
 | [dnb-hugo-internals](https://github.com/davidsneighbour/hugo-internals) | Better internal templates for GoHugo |
@@ -267,7 +272,7 @@ Should there be frequently asked questions then they will appear here.
 | [dnb-hugo-sitemap](https://github.com/davidsneighbour/hugo-sitemap) | |
 | [dnb-hugo-social](https://github.com/davidsneighbour/hugo-social) | |
 | [dnb-hugo-workflows](https://github.com/davidsneighbour/hugo-workflows) | A collection of Github Actions/Workflows to optimise your work with GoHugo. |
-| [dnb-hugo-youtube](https://github.com/davidsneighbour/hugo-youtube) | A shortcode and partial for lite youtube embeds. |
+| [dnb-hugo-youtube](https://github.com/davidsneighbour/hugo-youtube) | A shortcode and partial for lite and speedy youtube embeds. |
 
 <!--lint disable no-missing-blank-lines -->
 <!--- COMPONENTS END --->
