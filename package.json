@@ -21,10 +21,10 @@
     "mem": "^9.0.2"
   },
   "devDependencies": {
-    "@dnb-org/bootstrap-config": "^3.5.9",
-    "@dnb-org/cypress-config": "^3.5.9",
-    "@dnb-org/standard-version-config": "^3.5.9",
-    "@dnb-org/tools": "^3.5.9"
+    "@davidsneighbour/bootstrap-config": "^4.0.1",
+    "@davidsneighbour/cypress-config": "^4.0.1",
+    "@davidsneighbour/standard-version-config": "^4.0.1",
+    "@davidsneighbour/tools": "^4.0.1"
   },
   "scripts": {
     "clean": "run-p clean:**",

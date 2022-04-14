@@ -1,6 +1,6 @@
 {
   "extends": [
-    "@dnb-hugo/eslint-config",
+    "@davidsneighbour/eslint-config",
     "plugin:cypress/recommended"
   ],
   "plugins": [
