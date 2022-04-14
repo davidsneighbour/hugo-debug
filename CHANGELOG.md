@@ -2,6 +2,61 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.5](https://github.com/davidsneighbour/hugo-debug/compare/v1.4.3...v1.5.5) (2022-04-14)
+
+
+### Features
+
+* add formatting partial for empty values ([cd16107](https://github.com/davidsneighbour/hugo-debug/commit/cd1610770dd0ff5b128993e510f7e654f06eedc5))
+* add separate debugging formatters for int/int64/float64 ([27278ee](https://github.com/davidsneighbour/hugo-debug/commit/27278eeb64327b984853db1432f6f58b31d5cf34)), closes [#76](https://github.com/davidsneighbour/hugo-debug/issues/76)
+* **deprecation:** Page.Hugo is deprecated, removed in debugpage.html ([85e70ba](https://github.com/davidsneighbour/hugo-debug/commit/85e70bae377a6b2e3911537aad7a3a3a1ac34326))
+* **fix:** remove quotation marks from string debugging ([14ff521](https://github.com/davidsneighbour/hugo-debug/commit/14ff5216f0291570f565f0afadba1b342bbf5fe3))
+* **fix:** remove table from time formatter ([6376297](https://github.com/davidsneighbour/hugo-debug/commit/6376297da8c77a7406f5e25cb2430a9da8041289))
+* **fix:** rework debugging table for dependency type ([f8e2cc0](https://github.com/davidsneighbour/hugo-debug/commit/f8e2cc056ece323bfd57a9bbdbef030bd72d3ace))
+
+
+### Bug Fixes
+
+* optimise table layout for dependency type ([3e0f02f](https://github.com/davidsneighbour/hugo-debug/commit/3e0f02f043c0c6a95bc32ed49e274f29e5d5462e))
+
+
+### Documentation
+
+* add repo image to README.md ([50cc714](https://github.com/davidsneighbour/hugo-debug/commit/50cc7143bccc70a9a92bd2812c6e1498ea4623fc))
+* rewrite README.md ([e757ffe](https://github.com/davidsneighbour/hugo-debug/commit/e757ffe04d08c3f31cffd00f3090e33201a25769))
+
+
+### Build System
+
+* fix README update scripts ([63eb78f](https://github.com/davidsneighbour/hugo-debug/commit/63eb78f1c824eed6d45e13d4bda5c180c2bb9de8))
+* **lint:** remove CHANGELOG.md from markdown linting ([95068c7](https://github.com/davidsneighbour/hugo-debug/commit/95068c78d72dcfc1995fdf202234226855d967e0))
+* update package dependencies & org naming ([#134](https://github.com/davidsneighbour/hugo-debug/issues/134)) ([276c05c](https://github.com/davidsneighbour/hugo-debug/commit/276c05c950f164d2082d6c199362727f98f024b3))
+
+
+### Chore
+
+* cleanup bin layout and fix paths in package.json ([cf2ecbc](https://github.com/davidsneighbour/hugo-debug/commit/cf2ecbcd760b514689f14b8d25abad1ea80d0cd9))
+* **config:** cleanup and fixes to dev site ([8af6c02](https://github.com/davidsneighbour/hugo-debug/commit/8af6c020c524aea3b7b3d8b97d1501b780e9e710))
+* **config:** require 0.92.0 for dependency graph debugging ([3709884](https://github.com/davidsneighbour/hugo-debug/commit/3709884317537a6fca244816570257a9a3607efd))
+* **config:** update header images ([695fc9d](https://github.com/davidsneighbour/hugo-debug/commit/695fc9d4f2c60ff14f4a0d15c8574dfabde30334))
+* **config:** update module configuration ([df9bf65](https://github.com/davidsneighbour/hugo-debug/commit/df9bf65dbd6e6626344c3cdc084032dc375ca650))
+* **deps:** update dependencies ([bc8b594](https://github.com/davidsneighbour/hugo-debug/commit/bc8b594943ba4ded2acee04450c99f72082cf05b))
+* **deps:** update dependencies ([1c7e7c0](https://github.com/davidsneighbour/hugo-debug/commit/1c7e7c0bc8ab6e35712bad71d5b5fc7eb68c5089))
+* **deps:** update dependencies ([83664c2](https://github.com/davidsneighbour/hugo-debug/commit/83664c2d4db302399ab457d1605b3390c4a0813b))
+* **deps:** update dependencies ([2917dfa](https://github.com/davidsneighbour/hugo-debug/commit/2917dfac888e51ebe04cb4a8021e2194cd718ab6))
+* fix paths after renaming ([239fb19](https://github.com/davidsneighbour/hugo-debug/commit/239fb194333dea5bf8d80371b279606fd1726335))
+* fix typo ([650a1d1](https://github.com/davidsneighbour/hugo-debug/commit/650a1d1e89d2f6a264a420b334a62a4a417170b2))
+* **release:** v1.4.4 ([990bcb7](https://github.com/davidsneighbour/hugo-debug/commit/990bcb7704d94b3897ded959adb9dfa6f7d54a55))
+* **release:** v1.5.0 ([6b47450](https://github.com/davidsneighbour/hugo-debug/commit/6b474500838024ac32949fcf58255d27604b92ef))
+* **release:** v1.5.1 ([a8a586a](https://github.com/davidsneighbour/hugo-debug/commit/a8a586ae2dceadddff88276f9596c6034d4b0e58))
+* **release:** v1.5.2 ([93cd2c0](https://github.com/davidsneighbour/hugo-debug/commit/93cd2c0118c14f3da46af2eb5c126395abf020b1))
+* **release:** v1.5.3 ([f708242](https://github.com/davidsneighbour/hugo-debug/commit/f708242e33ef6403e04ad55f1f8e11af09fcede2))
+* **release:** v1.5.4 ([452ae59](https://github.com/davidsneighbour/hugo-debug/commit/452ae591df35c5e99dd2acfccc07a15a11638a34))
+* remove vscode configuration ([342a4d7](https://github.com/davidsneighbour/hugo-debug/commit/342a4d795c5ae1d59e30eef2bfc9bff2e24c35f4))
+* update go version ([6b99970](https://github.com/davidsneighbour/hugo-debug/commit/6b99970f7b211ba2ceeb3cae5d8e8ae5bd56b892))
+* update go.mod ([98dee6e](https://github.com/davidsneighbour/hugo-debug/commit/98dee6ee9beb7bfa0ac8e1471041fd1fb3fc3426))
+* update repository files ([6911704](https://github.com/davidsneighbour/hugo-debug/commit/69117044d9e47747cb80d176aea41c91524f7638))
+
 ### [1.5.4](https://github.com/davidsneighbour/hugo-debug/compare/v1.4.3...v1.5.4) (2022-04-14)
 
 
