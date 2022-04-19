@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.6](https://github.com/davidsneighbour/hugo-debug/compare/v1.5.5...v1.5.6) (2022-04-19)
+
+
+### Chore
+
+* **cleanup:** remove dnb-org particles and clean up repo ([5341713](https://github.com/davidsneighbour/hugo-debug/commit/5341713b900866ceaf6a26eeffe109fda81f15ee))
+
 ### [1.5.5](https://github.com/davidsneighbour/hugo-debug/compare/v1.4.3...v1.5.5) (2022-04-14)
 
 
