@@ -1,4 +1,4 @@
-baseURL = "https://dnb-org.github.io/debug/"
+baseURL = "https://davidsneighbour.github.io/hugo-debug/"
 
 # disabling unused features
 disableKinds = ["taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT"]

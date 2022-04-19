@@ -197,7 +197,7 @@ disablenote = false
 
 - **namespace:** (string) namespace slug for your plugin/theme. keep it short. three characters are enough. There is no restriction on this, but think about the look of the loglines with longer namespaces.
 - **debuglevel:** (number, 0 to 10) set the severity level that should maximally be shown. The higher the more info/debug on your CLI. 10 is maximum and can be helpful to debug issues.
-- **disablenote:** (boolean) disables the note at the beginning that dnb-org's debug module is used.
+- **disablenote:** (boolean) disables the note at the beginning that the debug module is used.
 
 ## Styling
 
