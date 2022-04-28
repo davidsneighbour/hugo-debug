@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.7](https://github.com/davidsneighbour/hugo-debug/compare/v1.5.6...v1.5.7) (2022-04-28)
+
+
+### Chore
+
+* **deps:** re-add package-lock.json ([1a66b98](https://github.com/davidsneighbour/hugo-debug/commit/1a66b98bf08a086ef51f3db2179572adabc39029))
+* **deps:** update gomod dependencies ([3114ccf](https://github.com/davidsneighbour/hugo-debug/commit/3114ccfa8a560c66657323f911212c28881a0846))
+
 ### [1.5.6](https://github.com/davidsneighbour/hugo-debug/compare/v1.5.5...v1.5.6) (2022-04-19)
 
 
