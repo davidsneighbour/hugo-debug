@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.8](https://github.com/davidsneighbour/hugo-debug/compare/v1.5.6...v1.5.8) (2022-05-18)
+
+
+### Chore
+
+* **config:** set dependabot to monthly ([0b82d13](https://github.com/davidsneighbour/hugo-debug/commit/0b82d135b6600c9ed7fefac81ef3b23a9e30b727))
+* **deps:** re-add package-lock.json ([1a66b98](https://github.com/davidsneighbour/hugo-debug/commit/1a66b98bf08a086ef51f3db2179572adabc39029))
+* **deps:** update dependencies ([ffba104](https://github.com/davidsneighbour/hugo-debug/commit/ffba1046709d97b49c36f2124d59af67a7f6f4d9))
+* **deps:** update gomod dependencies ([3114ccf](https://github.com/davidsneighbour/hugo-debug/commit/3114ccfa8a560c66657323f911212c28881a0846))
+* **release:** v1.5.7 ([4225ed4](https://github.com/davidsneighbour/hugo-debug/commit/4225ed49b2653022165187676645ab27e28e5858))
+
 ### [1.5.7](https://github.com/davidsneighbour/hugo-debug/compare/v1.5.6...v1.5.7) (2022-04-28)
 
 
