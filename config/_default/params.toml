@@ -69,8 +69,8 @@ description = "an object containing pagination information for the current page"
 type = "text.Position"
 class = "struct"
 slug = "position"
-label = "Position Object"
-description = "an object containing position information for the current line in a shortcode"
+label = "Position"
+description = "A dictionary containing position information for line that the current shortcode was called in."
 
 [[dnb.debug.formatters]]
 type = "time.Time"
