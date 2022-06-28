@@ -17,3 +17,4 @@ git commit --amend --no-edit
 
 # push release to GitHub
 git push --follow-tags origin main
+git push --tags origin main
