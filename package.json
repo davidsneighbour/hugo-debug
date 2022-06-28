@@ -21,10 +21,10 @@
     "mem": "^9.0.2"
   },
   "devDependencies": {
-    "@davidsneighbour/bootstrap-config": "^4.0.4",
-    "@davidsneighbour/cypress-config": "^4.0.4",
-    "@davidsneighbour/standard-version-config": "^4.0.4",
-    "@davidsneighbour/tools": "^4.0.4"
+    "@davidsneighbour/bootstrap-config": "^4.0.8",
+    "@davidsneighbour/cypress-config": "^4.0.8",
+    "@davidsneighbour/standard-version-config": "^4.0.8",
+    "@davidsneighbour/tools": "^4.0.9"
   },
   "scripts": {
     "clean": "run-p clean:**",

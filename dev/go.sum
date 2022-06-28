@@ -2,5 +2,11 @@ github.com/davidsneighbour/hugo-debug v1.5.3 h1:A8eEHWR2UfBErKnKEHiq+G6mvzHI8uUI
 github.com/davidsneighbour/hugo-debug v1.5.3/go.mod h1:ka0eftoPGqF1B0TUvAIvWOau96Y5XQKKGZ9DCb5NBz4=
 github.com/davidsneighbour/hugo-debug v1.5.5 h1:uL8nKPr1yWVSWfutpORluAiyQmZ0Vr17NOTyl7933W8=
 github.com/davidsneighbour/hugo-debug v1.5.5/go.mod h1:ka0eftoPGqF1B0TUvAIvWOau96Y5XQKKGZ9DCb5NBz4=
+github.com/davidsneighbour/hugo-debug v1.5.6 h1:0VCYMWKVwj2yPFuWeHeGYtpLDXKaD2Q/qgluxNXdNUk=
+github.com/davidsneighbour/hugo-debug v1.5.6/go.mod h1:ka0eftoPGqF1B0TUvAIvWOau96Y5XQKKGZ9DCb5NBz4=
+github.com/davidsneighbour/hugo-debug v1.5.9 h1:3jL5MFqL//uXX7rkBpcgwEqgFZek1t4HMja65YctAhc=
+github.com/davidsneighbour/hugo-debug v1.5.9/go.mod h1:ka0eftoPGqF1B0TUvAIvWOau96Y5XQKKGZ9DCb5NBz4=
 github.com/davidsneighbour/hugo-hooks v1.3.2 h1:weCI40J4z7OnBL9tEDSw/9qtmNOgqqQi43+JewjXtRo=
 github.com/davidsneighbour/hugo-hooks v1.3.2/go.mod h1:agUeSwS32vDxIHULp8fP/vnP6wOP9E2DdW44UZkdCUs=
+github.com/davidsneighbour/hugo-hooks v1.3.3 h1:fOavETv1IPahzpTlOlZpye+6rdz/rtLQZvWwQh24fHo=
+github.com/davidsneighbour/hugo-hooks v1.3.3/go.mod h1:7Z0/nbpIE4IvyppSwCJYw6gXE9Fe5cLBM80gceQ2VYQ=
