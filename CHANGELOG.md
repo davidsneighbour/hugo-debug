@@ -2,6 +2,36 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.11](https://github.com/davidsneighbour/hugo-debug/compare/v1.5.6...v1.5.11) (2022-06-28)
+
+
+### Features
+
+* add versioninfo partial/shortcode ([54e4e16](https://github.com/davidsneighbour/hugo-debug/commit/54e4e169dee8f43b5322a6f4dd7b9583330a40ce))
+
+
+### Bug Fixes
+
+* proper description of position formatter ([ad5e1f1](https://github.com/davidsneighbour/hugo-debug/commit/ad5e1f11b838aa17e4e980c05843a06d7f807c9e))
+
+
+### Documentation
+
+* update LICENSE.md to MIT ([706ce98](https://github.com/davidsneighbour/hugo-debug/commit/706ce98fe4c1780a749c5e99d0f7f536d3bd5bcc))
+
+
+### Chore
+
+* **config:** set dependabot to monthly ([0b82d13](https://github.com/davidsneighbour/hugo-debug/commit/0b82d135b6600c9ed7fefac81ef3b23a9e30b727))
+* **deps:** re-add package-lock.json ([1a66b98](https://github.com/davidsneighbour/hugo-debug/commit/1a66b98bf08a086ef51f3db2179572adabc39029))
+* **deps:** update dependencies ([ed2db56](https://github.com/davidsneighbour/hugo-debug/commit/ed2db563fca090ff36931be10a0cf1e3199cce2f))
+* **deps:** update dependencies ([ffba104](https://github.com/davidsneighbour/hugo-debug/commit/ffba1046709d97b49c36f2124d59af67a7f6f4d9))
+* **deps:** update gomod dependencies ([3114ccf](https://github.com/davidsneighbour/hugo-debug/commit/3114ccfa8a560c66657323f911212c28881a0846))
+* **release:** v1.5.10 ([e1a0d70](https://github.com/davidsneighbour/hugo-debug/commit/e1a0d70a156eca9a0fb31b17da811856585aa7fb))
+* **release:** v1.5.7 ([4225ed4](https://github.com/davidsneighbour/hugo-debug/commit/4225ed49b2653022165187676645ab27e28e5858))
+* **release:** v1.5.8 ([1627ece](https://github.com/davidsneighbour/hugo-debug/commit/1627ecef95ce9d71f73dce292384c1355e07cb08))
+* **release:** v1.5.9 ([7a9764e](https://github.com/davidsneighbour/hugo-debug/commit/7a9764e9da95ba33beda3ef6575c1b0b1bf3b105))
+
 ### [1.5.10](https://github.com/davidsneighbour/hugo-debug/compare/v1.5.6...v1.5.10) (2022-06-28)
 
 
