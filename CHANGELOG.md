@@ -2,6 +2,48 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.13](https://github.com/davidsneighbour/hugo-debug/compare/v1.5.6...v1.5.13) (2022-07-24)
+
+
+### Features
+
+* add versioninfo partial/shortcode ([54e4e16](https://github.com/davidsneighbour/hugo-debug/commit/54e4e169dee8f43b5322a6f4dd7b9583330a40ce))
+
+
+### Bug Fixes
+
+* proper description of position formatter ([ad5e1f1](https://github.com/davidsneighbour/hugo-debug/commit/ad5e1f11b838aa17e4e980c05843a06d7f807c9e))
+* remove errant debug ([1278a12](https://github.com/davidsneighbour/hugo-debug/commit/1278a1234a30d1356674f39607458e5efb311210))
+* use full table row markup in table partial ([c9b1dbf](https://github.com/davidsneighbour/hugo-debug/commit/c9b1dbff7f9ba802b0c57c04f15eeca05f63d453))
+
+
+### Documentation
+
+* update LICENSE.md to MIT ([706ce98](https://github.com/davidsneighbour/hugo-debug/commit/706ce98fe4c1780a749c5e99d0f7f536d3bd5bcc))
+
+
+### Chore
+
+* **config:** remove dev install ([019b54c](https://github.com/davidsneighbour/hugo-debug/commit/019b54cbcfef7a25808ab90390a4c3f8c588ff72))
+* **config:** remove gh workflow ([d791490](https://github.com/davidsneighbour/hugo-debug/commit/d791490fbb0fb5aeca96b690a1598b486d438538))
+* **config:** set dependabot to monthly ([0b82d13](https://github.com/davidsneighbour/hugo-debug/commit/0b82d135b6600c9ed7fefac81ef3b23a9e30b727))
+* **deps:** re-add package-lock.json ([1a66b98](https://github.com/davidsneighbour/hugo-debug/commit/1a66b98bf08a086ef51f3db2179572adabc39029))
+* **deps:** update dependencies ([ed2db56](https://github.com/davidsneighbour/hugo-debug/commit/ed2db563fca090ff36931be10a0cf1e3199cce2f))
+* **deps:** update dependencies ([ffba104](https://github.com/davidsneighbour/hugo-debug/commit/ffba1046709d97b49c36f2124d59af67a7f6f4d9))
+* **deps:** update gomod dependencies ([3114ccf](https://github.com/davidsneighbour/hugo-debug/commit/3114ccfa8a560c66657323f911212c28881a0846))
+* **release:** v1.5.10 ([e1a0d70](https://github.com/davidsneighbour/hugo-debug/commit/e1a0d70a156eca9a0fb31b17da811856585aa7fb))
+* **release:** v1.5.11 ([be1f320](https://github.com/davidsneighbour/hugo-debug/commit/be1f320b88c3d7e4853da2770586bc9792d812de))
+* **release:** v1.5.12 ([2bf38a7](https://github.com/davidsneighbour/hugo-debug/commit/2bf38a7b46604d4ab2acf8c2d421eaee16049651))
+* **release:** v1.5.7 ([4225ed4](https://github.com/davidsneighbour/hugo-debug/commit/4225ed49b2653022165187676645ab27e28e5858))
+* **release:** v1.5.8 ([1627ece](https://github.com/davidsneighbour/hugo-debug/commit/1627ecef95ce9d71f73dce292384c1355e07cb08))
+* **release:** v1.5.9 ([7a9764e](https://github.com/davidsneighbour/hugo-debug/commit/7a9764e9da95ba33beda3ef6575c1b0b1bf3b105))
+
+
+### Build System
+
+* **fix:** send tag to github on release ([ba5fec5](https://github.com/davidsneighbour/hugo-debug/commit/ba5fec59b160343581da08c5df43b8eb2cb40b8b))
+* open release page on GitHub after release ([9ec7568](https://github.com/davidsneighbour/hugo-debug/commit/9ec756882461a3350cd7f2ac7e73078a7efb450c))
+
 ### [1.5.12](https://github.com/davidsneighbour/hugo-debug/compare/v1.5.6...v1.5.12) (2022-06-28)
 
 
