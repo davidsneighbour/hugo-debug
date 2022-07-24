@@ -21,4 +21,4 @@ git push --tags origin main
 
 # create a release on GitHub
 VERSION=$(node -pe 'require("./package.json")["version"]')
-xdg-open https://github.com/davidsneighbour/hugo-debug/releases/tag/v{$VERSION}
+xdg-open https://github.com/davidsneighbour/hugo-debug/releases/tag/v"$VERSION" &>> /dev/null

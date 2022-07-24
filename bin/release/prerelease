@@ -21,6 +21,7 @@ if test -f "$SCRIPTPATH"/replacements; then
 fi
 
 bin/build/prepare-docs
+git add README.md
 
 hugo mod get -u ./...
 hugo mod tidy
