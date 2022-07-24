@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.18](https://github.com/davidsneighbour/hugo-debug/compare/v1.5.16...v1.5.18) (2022-07-24)
+
+
+### Chore
+
+* **release:** v1.5.17 ([e7f5890](https://github.com/davidsneighbour/hugo-debug/commit/e7f5890fc683d82b7a428f3feef80833ffb57750))
+
+
+### Build System
+
+* **fix:** release script errors and create GH release ([b5fb2a5](https://github.com/davidsneighbour/hugo-debug/commit/b5fb2a50f36ff35406bff72df70a6723775cdebd))
+
 ### [1.5.17](https://github.com/davidsneighbour/hugo-debug/compare/v1.5.16...v1.5.17) (2022-07-24)
 
 ### [1.5.16](https://github.com/davidsneighbour/hugo-debug/compare/v1.5.15...v1.5.16) (2022-07-24)
