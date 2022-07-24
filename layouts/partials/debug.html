@@ -1,8 +1,8 @@
 {{- $config := site.Params.dnb.debug -}}
 
-{{/*{{- if in site.Params.dnb.debug.ignoreErrors .slug -}}*/}}
-{{/*  {{- return -}}*/}}
-{{/*{{- end -}}*/}}
+{{- if in site.Params.dnb.debug.ignoreErrors .slug -}}
+  {{- return -}}
+{{- end -}}
 
 {{- if eq ($config.disablenote | default false) false -}}
   {{- warnf "[%s/debug-0] additional logging by hugo-debug (see %s)" $config.namespace $config.loglink -}}

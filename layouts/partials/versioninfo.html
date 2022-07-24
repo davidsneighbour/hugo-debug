@@ -24,7 +24,16 @@
           (index $names $index)
           (partial "debugtype" $item)
           ($item) -}}
-      {{- partial "debugging-partials/struct-row.html" $slices -}}
+    <tr>
+      {{- range $index, $item := $slices -}}
+        {{- if (eq $index 0) -}}
+          <th>{{- . -}}</th>
+        {{- else -}}
+          <td>{{- partial "debugprint.html" . . -}}</td>
+        {{- end -}}
+      {{- end -}}
+    </tr>
+
     {{- end -}}
   </tbody>
 </table>
