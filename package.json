@@ -1,6 +1,6 @@
 {
   "name": "@davidsneigihbour/hugo-debug",
-  "version": "1.5.18",
+  "version": "1.5.19",
   "license": "GPL-3.0-only",
   "description": "GoHugo's missing debugging partials.",
   "author": {
