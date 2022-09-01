@@ -21,7 +21,7 @@
     "mem": "^9.0.2"
   },
   "devDependencies": {
-    "@davidsneighbour/standard-version-config": "^4.0.8",
+    "@davidsneighbour/standard-version-config": "^4.0.9",
     "@davidsneighbour/tools": "^4.0.9"
   },
   "scripts": {
