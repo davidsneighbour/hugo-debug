@@ -21,12 +21,10 @@
     "mem": "^9.0.2"
   },
   "devDependencies": {
-    "@davidsneighbour/standard-version-config": "^4.0.8",
-    "@davidsneighbour/tools": "^4.0.9"
+    "@davidsneighbour/config": "^1.0.0"
   },
   "scripts": {
     "clean": "run-p clean:**",
-    "clean:cypress": "rimraf tests/cypress/screenshots tests/cypress/videos",
     "clean:hugo": "rimraf dev/public dev/resources dev/.hugo_build.lock hugo.log",
     "clean:node": "rimraf node_modules package-lock.json",
     "release": "standard-version --release-as patch -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" && ./bin/release/postrelease",

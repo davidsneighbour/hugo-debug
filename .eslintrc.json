@@ -1,9 +1,5 @@
 {
   "extends": [
-    "@davidsneighbour/eslint-config",
-    "plugin:cypress/recommended"
-  ],
-  "plugins": [
-    "cypress"
+    "@davidsneighbour/eslint-config"
   ]
 }

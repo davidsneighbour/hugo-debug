@@ -1,5 +1,5 @@
-const defaultStandardVersion = require("@davidsneighbour/standard-version-config");
-const localStandardVersion =  {
+const defaultStandardVersion = require("@davidsneighbour/config/standard-version");
+const localStandardVersion = {
   bumpFiles: [
     ...defaultStandardVersion.bumpFiles,
     {
@@ -7,6 +7,9 @@ const localStandardVersion =  {
       type: "json",
     },
   ],
+  skip: {
+    changelog: true
+  },
 };
 
 const standardVersion = {
