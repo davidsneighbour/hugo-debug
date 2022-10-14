@@ -1,12 +1,22 @@
 {{- /* see https://gohugo.io/functions/hugo.html */ -}}
 {{- $names := slice
-      ".Generator" ".Version" ".GoVersion"
-      ".Environment" ".CommitHash" ".BuildDate"
-      ".IsExtended" ".IsProduction" -}}
+      ".Generator"
+      ".Version"
+      ".GoVersion"
+      ".Environment"
+      ".CommitHash"
+      ".BuildDate"
+      ".IsExtended"
+      ".IsProduction" -}}
 {{- $items := slice
-      (printf "%s" hugo.Generator) hugo.Version hugo.GoVersion
-      hugo.Environment hugo.CommitHash hugo.BuildDate
-      hugo.IsExtended hugo.IsProduction -}}
+      hugo.Generator
+      hugo.Version
+      hugo.GoVersion
+      hugo.Environment
+      hugo.CommitHash
+      hugo.BuildDate
+      hugo.IsExtended
+      hugo.IsProduction -}}
 
 <table class="debugprint">
   <thead>
@@ -22,18 +32,15 @@
     {{- range $index, $item := $items -}}
       {{- $slices := slice
           (index $names $index)
-          (partial "debugtype" $item)
-          ($item) -}}
-    <tr>
-      {{- range $index, $item := $slices -}}
+          (partial "debugtype.html" $item)
+          (partial "debugprint.html" $item) -}}
+      <tr>{{- range $index, $item := $slices -}}
         {{- if (eq $index 0) -}}
           <th>{{- . -}}</th>
         {{- else -}}
-          <td>{{- partial "debugprint.html" . . -}}</td>
+          <td>{{- . -}}</td>
         {{- end -}}
-      {{- end -}}
-    </tr>
-
+      {{- end -}}</tr>
     {{- end -}}
   </tbody>
 </table>
