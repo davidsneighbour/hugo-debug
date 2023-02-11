@@ -21,7 +21,7 @@
     "mem": "^9.0.2"
   },
   "devDependencies": {
-    "@davidsneighbour/config": "^1.0.28"
+    "@davidsneighbour/config": "^5.0.1"
   },
   "scripts": {
     "clean": "run-p clean:**",
